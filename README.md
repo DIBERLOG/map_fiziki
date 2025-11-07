@@ -1,4 +1,4 @@
-[![Demo]([https://img.shields.io/badge/Try_Demo-orange?style=for-the-badge](https://diberlog.github.io/map_fiziki/))](https://diberlog.github.io/fyz/) [![GitHub]([https://img.shields.io/badge/View_Code-black?style=for-the-badge)](https://github.com/DIBERLOG/map_physics](https://github.com/DIBERLOG/map_fiziki))
+[![Demo](https://img.shields.io/badge/Try_Demo-orange?style=for-the-badge)](https://diberlog.github.io/map_fiziki/)
 
 
 
