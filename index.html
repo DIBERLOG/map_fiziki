@@ -5462,7 +5462,325 @@ document.addEventListener("DOMContentLoaded", () => {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
+  // === 🧠 AutoImage 5.0 — две картинки по категории (с поддержкой карусели) ===
+
+async function fetchImagesForTopic(topicName, category = null) {
+  const queryBase = topicName.replace(/_/g, " ").trim().toLowerCase();
+
+  // --- словарь переводов ---
+  const topicTranslations = {
   
+  // ⚙️ Механика
+  "механика": "mechanics physics",
+  "кинематика": "kinematics physics",
+  "динамика": "dynamics physics",
+  "законы ньютона": "newton laws",
+  "перемещение": "displacement physics",
+  "скорость": "velocity motion",
+  "ускорение": "acceleration motion",
+  "сила": "force physics",
+  "масса": "mass physics",
+  "импульс": "momentum physics",
+  "трение": "friction physics",
+  "работа": "work physics",
+  "мощность": "power physics",
+  "потенциальная энергия": "potential energy physics",
+  "кинетическая энергия": "kinetic energy",
+  "закон сохранения энергии": "law of conservation of energy",
+  "закон сохранения импульса": "law of conservation of momentum",
+  "механическое равновесие": "mechanical equilibrium",
+  "вращение": "rotation motion",
+  "момент инерции": "moment of inertia",
+  "центростремительное ускорение": "centripetal acceleration",
+  "падение тел": "free fall physics",
+  "маятник": "pendulum physics",
+
+  // 🌡️ Термодинамика и МКТ
+  "молекулярно-кинетическая теория": "molecular kinetic theory",
+  "температура": "temperature physics",
+  "давление": "pressure physics",
+  "идеальный газ": "ideal gas law",
+  "уравнение состояния газа": "ideal gas equation",
+  "закон бойля-мариотта": "boyle mariotte law",
+  "закон гей-люссака": "gay lussac law",
+  "закон шарля": "charles law",
+  "теплота": "heat physics",
+  "теплоемкость": "heat capacity",
+  "удельная теплоемкость": "specific heat capacity",
+  "плавление": "melting physics",
+  "испарение": "evaporation physics",
+  "конденсация": "condensation physics",
+  "кипение": "boiling physics",
+  "теплопередача": "heat transfer",
+  "теплопроводность": "thermal conductivity",
+  "конвекция": "convection heat transfer",
+  "излучение": "thermal radiation",
+  "энтропия": "entropy thermodynamics",
+  "внутренняя энергия": "internal energy physics",
+  "первый закон термодинамики": "first law of thermodynamics",
+  "второй закон термодинамики": "second law of thermodynamics",
+
+  // ⚡ Электричество и магнетизм
+  "электричество": "electricity physics",
+  "электрический ток": "electric current physics",
+  "напряжение": "voltage physics",
+  "сопротивление": "resistance physics",
+  "закон ома": "ohm law",
+  "последовательное соединение": "series circuit",
+  "параллельное соединение": "parallel circuit",
+  "электрическая мощность": "electric power",
+  "электрическая энергия": "electrical energy",
+  "электрическое поле": "electric field physics",
+  "магнитное поле": "magnetic field physics",
+  "электромагнетизм": "electromagnetism",
+  "индукция": "electromagnetic induction",
+  "закон фарадея": "faraday law of induction",
+  "закон ленца": "lenz law",
+  "трансформатор": "transformer physics",
+  "генератор": "electric generator",
+  "электродвигатель": "electric motor",
+  "конденсатор": "capacitor physics",
+
+  // 🌊 Волны и колебания
+  "колебания": "oscillations physics",
+  "гармонические колебания": "harmonic oscillations",
+  "резонанс": "resonance physics",
+  "волны": "wave motion physics",
+  "длина волны": "wavelength",
+  "частота": "frequency physics",
+  "интерференция": "interference physics",
+  "дифракция": "diffraction physics",
+  "стоячие волны": "standing waves",
+  "звуковые волны": "sound waves",
+  "ультразвук": "ultrasound physics",
+  "доплеровский эффект": "doppler effect",
+
+  // ☀️ Оптика
+  "оптика": "optics physics",
+  "закон отражения": "law of reflection",
+  "закон преломления": "law of refraction",
+  "линза": "lens optics",
+  "зеркало": "mirror optics",
+  "фокусное расстояние": "focal length",
+  "изображение в линзе": "image in lens",
+  "оптические приборы": "optical instruments",
+  "микроскоп": "microscope optics",
+  "телескоп": "telescope optics",
+  "спектр": "spectrum light",
+  "дисперсия света": "dispersion of light",
+  "поляризация": "polarization of light",
+
+  // 🧬 Квантовая физика и микромир
+  "атомная физика": "atomic physics",
+  "атом": "atom model physics",
+  "модель бора": "bohr model atom",
+  "фотоэффект": "photoelectric effect",
+  "корпускулярно-волновой дуализм": "wave particle duality",
+  "квант": "quantum particle physics",
+  "квантовая механика": "quantum mechanics",
+  "квантовая теория": "quantum theory",
+  "квантовая теория поля": "quantum field theory",
+  "принцип неопределенности": "heisenberg uncertainty principle",
+  "туннельный эффект": "quantum tunneling",
+  "суперпозиция": "quantum superposition",
+  "запутанность": "quantum entanglement",
+  "многомировая интерпретация": "many worlds interpretation",
+  "квантовый компьютер": "quantum computer",
+  "квантовая запутанность": "quantum entanglement",
+  "квантовые флуктуации": "quantum fluctuations",
+  "квантовый вакуум": "quantum vacuum",
+  "частица": "subatomic particle",
+  "физика частиц": "particle physics",
+  "хиггсов бозон": "higgs boson",
+  "нейтрино": "neutrino",
+  "фотон": "photon",
+  "электрон": "electron",
+  "протон": "proton",
+  "нейтрон": "neutron",
+
+  // 🪐 Астрофизика и космология
+  "вселенная": "universe cosmos",
+  "галактика": "galaxy",
+  "звезда": "star astronomy",
+  "планета": "planet astronomy",
+  "солнце": "sun astronomy",
+  "луна": "moon astronomy",
+  "черная дыра": "black hole",
+  "пульсар": "pulsar",
+  "нейтронная звезда": "neutron star",
+  "сверхновая": "supernova explosion",
+  "квазар": "quasar",
+  "гравитация": "gravity physics",
+  "закон всемирного тяготения": "law of universal gravitation",
+  "специальная теория относительности": "special relativity",
+  "общая теория относительности": "general relativity",
+  "пространство-время": "space-time physics",
+  "гравитационные волны": "gravitational waves",
+  "кривизна пространства": "spacetime curvature",
+  "время": "time physics",
+  "стрела времени": "arrow of time",
+  "кротовая нора": "wormhole physics",
+  "мультивселенная": "multiverse concept",
+  "большой взрыв": "big bang theory",
+  "тепловая смерть вселенной": "heat death of the universe",
+
+  // 🧲 Современная и ядерная физика
+  "ядерная физика": "nuclear physics",
+  "радиоактивность": "radioactivity",
+  "распад": "radioactive decay",
+  "полураспад": "half life nuclear physics",
+  "изотоп": "isotope physics",
+  "ускоритель частиц": "particle accelerator",
+  "коллайдер": "particle collider",
+  "стандартная модель": "standard model physics",
+  "физика высоких энергий": "high energy physics",
+  "теория суперструн": "string theory",
+  "м-теория": "m-theory",
+  "теория всего": "theory of everything",
+  "гравитационные взаимодействия": "gravitational interaction",
+  "объединение сил": "unification of forces",
+
+  // 🧭 Философия и будущее физики
+  "философия физики": "philosophy of physics",
+  "философия науки": "philosophy of science",
+  "онтология": "ontology philosophy",
+  "эпистемология": "epistemology science",
+  "детерминизм": "determinism physics",
+  "индетерминизм": "indeterminism physics",
+  "время и пространство": "time and space concept",
+  "реальность": "nature of reality",
+  "наблюдатель": "observer effect",
+  "будущее физики": "future of physics",
+  "технологии будущего": "future technology physics",
+  "искусственный интеллект в физике": "artificial intelligence in physics",
+  "квантовое сознание": "quantum consciousness",
+  "смысл времени": "meaning of time physics",
+  "пределы познания": "limits of knowledge physics",
+  "этика науки": "ethics of science",
+  "философия квантовой механики": "philosophy of quantum mechanics",
+  "интерпретации квантовой механики": "interpretations of quantum mechanics"
+
+};
+
+
+  const query = topicTranslations[queryBase] || queryBase;
+
+  // --- определяем категорию ---
+  const detectCategory = (name) => {
+    name = name.toLowerCase();
+    if (name.match(/(вселен|галак|космос|относит|чёрн|релятив|астро)/)) return "astro";
+    if (name.match(/(квант|атом|частиц|элементар|дуализм)/)) return "quantum";
+    if (name.match(/(тепл|давлен|газ|термо|энтроп)/)) return "thermo";
+    if (name.match(/(электр|магнит|индукц|ток|напряж)/)) return "electro";
+    if (name.match(/(механ|движ|ускор|сила|инерц)/)) return "mechanics";
+    if (name.match(/(оптик|свет|линз|зеркал)/)) return "optics";
+    if (name.match(/(философ|сознани|время|реальн|будущ|интеллект)/)) return "philosophy";
+    return "general";
+  };
+  const cat = category || detectCategory(topicName);
+  console.log(`🔍 Поиск изображений для: ${query} [категория: ${cat}]`);
+
+  // --- источники ---
+  const tryRuWiki = async (q) => {
+    try {
+      const r = await fetch(`https://ru.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(q)}`);
+      const d = await r.json();
+      const urls = (d.items || [])
+        .filter(i => i.srcset?.length)
+        .slice(0, 2)
+        .map(i => i.srcset[0]?.src)
+        .filter(Boolean);
+      return urls;
+    } catch { return []; }
+  };
+
+  const tryEnWiki = async (q) => {
+    try {
+      const r = await fetch(`https://en.wikipedia.org/api/rest_v1/page/media-list/${encodeURIComponent(q)}`);
+      const d = await r.json();
+      const urls = (d.items || [])
+        .filter(i => i.srcset?.length)
+        .slice(0, 2)
+        .map(i => i.srcset[0]?.src)
+        .filter(Boolean);
+      return urls;
+    } catch { return []; }
+  };
+
+  const tryNASA = async (q) => {
+    try {
+      const r = await fetch(`https://images-api.nasa.gov/search?q=${encodeURIComponent(q)}&media_type=image`);
+      const d = await r.json();
+      const urls = (d.collection?.items || [])
+        .slice(0, 2)
+        .map(i => i.links?.[0]?.href)
+        .filter(Boolean);
+      return urls;
+    } catch { return []; }
+  };
+
+  const tryPixabay = async (q) => {
+    try {
+      const r = await fetch(`https://pixabay.com/api/?key=34381645-67b9b6ef3e0cfd0b7df18a1b1&q=${encodeURIComponent(q)}&image_type=photo&lang=ru&per_page=3`);
+      const d = await r.json();
+      return (d.hits || []).slice(0, 2).map(h => h.webformatURL);
+    } catch { return []; }
+  };
+
+  // --- приоритет по категории ---
+  const order = {
+    "mechanics": [tryRuWiki, tryPixabay, tryEnWiki],
+    "thermo": [tryRuWiki, tryPixabay, tryEnWiki],
+    "optics": [tryRuWiki, tryPixabay, tryEnWiki],
+    "electro": [tryRuWiki, tryPixabay, tryEnWiki],
+    "quantum": [tryEnWiki, tryPixabay],
+    "astro": [tryNASA, tryEnWiki, tryPixabay],
+    "philosophy": [tryPixabay, tryEnWiki],
+    "general": [tryPixabay, tryRuWiki]
+  };
+
+  // --- выполняем поиск по приоритету ---
+  for (const fn of order[cat] || order.general) {
+    const urls = await fn(query);
+    if (urls.length > 0) return urls;
+  }
+
+  console.log("❌ Изображения не найдены:", query);
+  return [];
+}
+
+// === подключаем к showModal ===
+const originalShowModal = window.showModal;
+
+window.showModal = async function(node) {
+  if (originalShowModal) originalShowModal(node);
+
+  const carouselInner = document.getElementById("carousel-inner");
+  const indicators = document.getElementById("carousel-indicators");
+  if (!carouselInner || !indicators) return;
+
+  carouselInner.innerHTML = `<div class="carousel-item"><p style="color:white;text-align:center;">🔄 Поиск изображений...</p></div>`;
+  indicators.innerHTML = "";
+
+  const imageUrls = await fetchImagesForTopic(node.name, node.category);
+  carouselInner.innerHTML = "";
+  indicators.innerHTML = "";
+
+  if (imageUrls.length > 0) {
+    imageUrls.forEach((url, idx) => {
+      const item = document.createElement("div");
+      item.className = "carousel-item" + (idx === 0 ? " active" : "");
+      item.style.backgroundImage = `url(${url})`;
+      carouselInner.appendChild(item);
+
+      const ind = document.createElement("div");
+      ind.className = "carousel-indicator" + (idx === 0 ? " active" : "");
+      indicators.appendChild(ind);
+    });
+  } else {
+    carouselInner.innerHTML = `<div class="carousel-item"><p style="color:white;text-align:center;">😔 Изображения не найдены</p></div>`;
+  }
+};
 </script>
 </body>
 </html>
