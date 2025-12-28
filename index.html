@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="windows-1251" />
+  <title>Карта физики - разблокируй понимание Вселенной</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/picture/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/picture/favicon.ico" />
+
+  <link rel="stylesheet" href="landing/styles.css" />
+</head>
+<body>
+  <!-- Фон с анимированными точками -->
+  <canvas id="hero-bg"></canvas>
+  <div id="transition-overlay" class="transition-overlay" aria-hidden="true"></div>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-mark" src="assets/picture/favicon.ico" alt="Карта физики" />
+      <span class="logo-text">Карта&nbsp;физики</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">О нас</a>
+      <a href="#map">Карта</a>
+      <a href="#insights">Заметки</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero секция -->
+  <main>
+    <section class="hero">
+      <div id="wave-webgl"></div>
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          &beta; - версия
+        </div>
+
+        <h1 class="hero-title">
+          Разблокируйте свое
+          <span>понимание&nbsp;физики</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Интерактивная карта фундаментальных теорий, экспериментов и
+          современных идей - от школьной механики до квантовой гравитации.
+        </p>
+
+        <div class="hero-actions">
+          <a href="index_map.html" class="btn btn-primary">Перейти к карте</a>
+          <a href="#about" class="btn btn-ghost">О проекте</a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <span class="meta-number">280+</span>
+            <span class="meta-label">узлов знаний</span>
+          </div>
+          <div>
+            <span class="meta-number">5</span>
+            <span class="meta-label">основных областей</span>
+          </div>
+          <div>
+            <span class="meta-number">∞</span>
+            <span class="meta-label">маршрутов изучения</span>
+          </div>
+        </div>
+
+        <p class="hero-warning">Внимание: на карте есть звуки.</p>
+      </div>
+    
+      <div class="hero-orb">
+        <div class="orb-core"></div>
+        <div class="orb-glow"></div>
+        <div class="orb-caption">
+          <span class="orb-title">???????? ???????</span>
+          <span class="orb-text">?? ??????? ??? ? ??????????? ????? - ??? ????????.</span>
+        </div>
+      </div>
+</section>
+
+    <!-- Блок "О нас" -->
+    <section id="about" class="section section-dark">
+      <div class="section-inner">
+        <h2 class="section-title">О проекте</h2>
+        <p class="section-lead">
+          "Карта физики" - это визуальный навигатор по науке о природе:
+          связи между разделами, ключевые формулы, исторический контекст и
+          реальные приложения.
+        </p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Интерактивная структура</h3>
+            <p>
+              Узлы на карте связаны логикой теорий: от классической механики
+              к электродинамике, квантовой физике и космологии.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Мост между школой и фронтиром</h3>
+            <p>
+              Видно, как школьные темы поднимаются к современным направлениям:
+              темная материя, квантовые технологии, теория струн.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Физика как единое целое</h3>
+            <p>
+              Вместо разрозненных формул - связанная картина: принципы
+              сохранения, симметрии, поля и частицы на одной плоскости знаний.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "Карта / портфолио" -->
+    <section id="map" class="section section-light">
+      <div class="section-inner">
+        <h2 class="section-title">Области карты</h2>
+        <p class="section-lead">
+          Пять крупных зон - как континенты на карте физики. В каждой -
+          десятки подтем и связей.
+        </p>
+
+        <div class="grid grid-4">
+          <article class="card card-outline">
+            <h3>Классическая физика</h3>
+            <p>
+              Механика, колебания, термодинамика, электромагнетизм - фундамент,
+              на котором держится инженерный мир.
+            </p>
+            <ul class="card-list">
+              <li>Законы Ньютона</li>
+              <li>Максвелл и свет</li>
+              <li>Тепловые машины</li>
+            </ul>
+          </article>
+
+          <article class="card card-outline">
+            <h3>Квантовая физика</h3>
+            <p>
+              От волновой функции до стандартной модели: микромир,
+              который задает правила для всего остального.
+            </p>
+            <ul class="card-list">
+              <li>Принцип неопределенности</li>
+              <li>Квантовые поля</li>
+              <li>Квантовые технологии</li>
+            </ul>
+          </article>
+
+          <article class="card card-outline">
+            <h3>Теория относительности</h3>
+            <p>
+              Пространство-время, гравитационные волны, эволюция Вселенной и
+              практические эффекты вроде GPS-коррекций.
+            </p>
+            <ul class="card-list">
+              <li>СТО и преобразования Лоренца</li>
+              <li>ОТО и геометрия</li>
+              <li>Космология</li>
+            </ul>
+          </article>
+
+          <article class="card card-outline">
+            <h3>Будущее и пропасть незнания</h3>
+            <p>
+              Квантовая гравитация, темная энергия, природа времени и роль
+              наблюдателя - фронтир, где вопросов больше, чем ответов.
+            </p>
+            <ul class="card-list">
+              <li>Теория струн</li>
+              <li>Петлевая гравитация</li>
+              <li>Проблема измерения</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="map-cta">
+          <a href="index_map.html" class="btn btn-primary btn-sm">Перейти к карте</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "Заметки" -->
+    <section id="insights" class="section section-dark">
+      <div class="section-inner">
+        <h2 class="section-title">Заметки</h2>
+        <p class="section-lead">
+          Небольшие заметки, которые соединяют идеи, интуицию и реальные задачи.
+        </p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <span class="pill">Интуиция</span>
+            <h3>Почему принцип наименьшего действия - главный герой</h3>
+            <p>
+              Одна идея, которая объединяет механику, оптику, квантовую физику и ОТО.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Принцип наименьшего действия" data-text="<p>??????? ??????????? ???????? ? ??? ?? ????????? ????? ??????, ? ????, ?? ??????? ?????? ????????????? ???????? ??????????. ?? ??????????, ??? ???????? ?????????? ??????? ? ??, ??? ??????? ???????????? ????????, ?????????? ?????????, ????????? ????????????? ????????.</p><p>? ???????? ??? ???????? ? ?????????? ???????, ? ?????? ? ? ?????? ?????, ? ????????? ?????? ? ? ???????????? ?? ???????????, ? ? ????? ?????? ??????????????? ? ? ????????????? ? ???????????? ????????????-???????. ?????? ??????? ?????? ?????????? ?????? ????? ????????, ?? ???? ???? ???????? ??????????.</p><p>?????????? ??? ????????: ??????? ??? ????????? ?????? ??? ????????, ? ????????? ????????? ??????? ??????. ????? ?????? ??????????, ??? ???? ???? ????????? ???????, ??????? ?? ?????? ?????? ?? ????? ?????? ??????.</p>">Читать заметку -></a>
+          </article>
+
+          <article class="card">
+            <span class="pill">История</span>
+            <h3>От термометра до статистического ансамбля</h3>
+            <p>
+              Как наблюдение за теплом превратилось в строгий язык энтропии.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Рождение статистической физики" data-text="От бытовых измерений температуры до идей Больцмана и Гиббса - путь от опыта к строгим моделям.">Читать заметку -></a>
+          </article>
+
+          <article class="card">
+            <span class="pill">Практика</span>
+            <h3>Карта как навигатор для самообразования</h3>
+            <p>
+              Как использовать карту, чтобы собрать маршрут обучения.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Навигация по карте" data-text="Смотри на связи тем: они подскажут, что учить раньше, а что можно оставить на потом.">Читать заметку -></a>
+          </article>
+
+          <article class="card">
+            <span class="pill">Наблюдения</span>
+            <h3>Свет и волны: один язык для разных явлений</h3>
+            <p>
+              Почему волновое мышление помогает видеть общие закономерности.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Волновой взгляд" data-text="Волны описывают свет, звук и квантовые состояния. Единый язык упрощает сложные темы.">Читать заметку -></a>
+          </article>
+
+          <article class="card">
+            <span class="pill">Идея</span>
+            <h3>Почему симметрия экономит законы</h3>
+            <p>
+              Симметрии объясняют, какие величины сохраняются в природе.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Симметрии и сохранение" data-text="Если система не меняется во времени, сохраняется энергия; если в пространстве - импульс.">Читать заметку -></a>
+          </article>
+
+          <article class="card">
+            <span class="pill">Карта</span>
+            <h3>Как читать связи между темами</h3>
+            <p>
+              Узлы и линии показывают, какие идеи подпирают друг друга.
+            </p>
+            <a href="#" class="card-link note-link" data-title="Связи на карте" data-text="Ищи узлы, где сходятся линии: это ключевые темы, которые открывают доступ к многим разделам.">Читать заметку -></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "Контакты" -->
+    <section id="contacts" class="section section-light">
+      <div class="section-inner contacts-inner">
+        <div>
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p class="section-lead">
+            Хочешь встроить карту в свой проект, курс или исследовательскую
+            группу? Напиши пару строк - обсудим.
+          </p>
+
+          <ul class="contact-list">
+            <li>workbook.ea@mail.ru</li>
+            <li>Telegram / почта (по запросу)</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mlgejpwv" method="POST">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как к вам обращаться?" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+
+          <label>
+            Чем вы занимаетесь?
+            <select name="role">
+              <option>Школьник / студент</option>
+              <option>Преподаватель</option>
+              <option>Исследователь</option>
+              <option>Разработчик / продакт</option>
+              <option>Другое</option>
+            </select>
+          </label>
+
+          <label>
+            Сообщение
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Кратко опишите свой запрос или идею"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Отправить
+          </button>
+        <div class="form-success" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно заметок -->
+  <div class="modal" id="note-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="note-modal-title">
+      <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">&times;</button>
+      <h3 class="modal__title" id="note-modal-title">Заметка</h3>
+      <p class="modal__text" id="note-modal-text"></p>
+    </div>
+  </div>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>c 2025 Карта физики</span>
+      <span>Сделано с любовью к науке.</span>
+    </div>
+  </footer>
+
+  <script src="landing/script.js"></script>
+</body>
+</html>

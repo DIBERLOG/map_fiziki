@@ -1,0 +1,1965 @@
+{
+  "ontology": [
+    "\\text{(1)}\\quad O = \\{(x, P(x)) \\mid x \\in W\\}",
+    "\\text{(2)}\\quad P(x) = \\{p_1, p_2, \\dots, p_n\\}",
+    "\\text{(3)}\\quad W = \\text{множество всех допустимых объектов бытия}",
+    "\\text{(4)}\\quad \\exists x \\in W \\Rightarrow x \\in O",
+    "\\text{(5)}\\quad O \\subseteq \\mathcal{U}"
+  ],
+  "epistemology": [
+    "\\text{(1)}\\quad K = \\langle S, O, J \\rangle",
+    "\\text{(2)}\\quad J(S,O) \\Rightarrow K",
+    "\\text{(3)}\\quad K = \\text{обоснованное знание}",
+    "\\text{(4)}\\quad O \\xrightarrow{\\text{наблюдение}} D",
+    "\\text{(5)}\\quad D + T \\Rightarrow K"
+  ],
+  "metaphysics": [
+    "\\text{(1)}\\quad R = \\langle B, C, M \\rangle",
+    "\\text{(2)}\\quad C(a,b) \\Rightarrow a \\text{ причина } b",
+    "\\text{(3)}\\quad M = \\{\\text{возможное}, \\text{необходимое}\\}",
+    "\\text{(4)}\\quad \\Box p \\Rightarrow p",
+    "\\text{(5)}\\quad \\Diamond p \\Rightarrow \\exists w : p(w)"
+  ],
+  "objective_reality": [
+    "\\text{(1)}\\quad \\exists x \\in W : x \\text{ независимо от } S",
+    "\\text{(2)}\\quad R(x) \\neq f(S)",
+    "\\text{(3)}\\quad O_{phys} \\subseteq R",
+    "\\text{(4)}\\quad M(x) \\text{ не тождественно } x",
+    "\\text{(5)}\\quad \\text{реальность} \\neq \\text{описание}"
+  ],
+  "dark_matter_ontology": [
+    "\\text{(1)}\\quad \\rho_{obs} > \\rho_{vis}",
+    "\\text{(2)}\\quad M_{dyn} = M_{vis} + M_{dm}",
+    "\\text{(3)}\\quad \\nabla \\Phi \\neq 0",
+    "\\text{(4)}\\quad M_{dm} \\in O_{theory}",
+    "\\text{(5)}\\quad O_{dm} \\notin O_{direct}"
+  ],
+  "observer_role": [
+    "\\text{(1)}\\quad \\Psi \\xrightarrow{\\text{измерение}} \\phi_i",
+    "\\text{(2)}\\quad O \\in \\text{формализме теории}",
+    "\\text{(3)}\\quad R = f(S,A)",
+    "\\text{(4)}\\quad \\text{измерение} \\neq \\text{пассивное}",
+    "\\text{(5)}\\quad S \\not\\perp \\Psi"
+  ],
+  "scientific_method": [
+    "\\text{(1)}\\quad H \\Rightarrow P \\Rightarrow E",
+    "\\text{(2)}\\quad E \\models H \\; \\text{или} \\; E \\not\\models H",
+    "\\text{(3)}\\quad T = \\langle A,M,P \\rangle",
+    "\\text{(4)}\\quad R(E) = \\text{воспроизводимость}",
+    "\\text{(5)}\\quad T \\xrightarrow{\\text{фальсификация}} T'"
+  ],
+  "determinism": [
+    "\\text{(1)}\\quad S(t_0)+L=S(t)",
+    "\\text{(2)}\\quad \\exists !\\,S(t)",
+    "\\text{(3)}\\quad \\text{детерминизм} \\neq \\text{предсказуемость}",
+    "\\text{(4)}\\quad \\delta S(t_0) \\Rightarrow \\delta S(t)",
+    "\\text{(5)}\\quad \\text{хаос } \\subset \\text{детерминизм}"
+  ],
+  "mechanics": [
+    "\\text{(1)}\\quad \\vec{F}=m\\vec{a}",
+    "\\text{(2)}\\quad \\sum\\vec{F}=0",
+    "\\text{(3)}\\quad E=T+V",
+    "\\text{(4)}\\quad \\vec{p}=m\\vec{v}",
+    "\\text{(5)}\\quad \\frac{d\\vec{p}}{dt}=\\vec{F}"
+  ],
+  "kinematics": [
+    "\\text{(1)}\\quad \\vec{v}=\\frac{d\\vec{r}}{dt}",
+    "\\text{(2)}\\quad \\vec{a}=\\frac{d\\vec{v}}{dt}",
+    "\\text{(3)}\\quad x=x(t)",
+    "\\text{(4)}\\quad v=\\frac{dx}{dt}",
+    "\\text{(5)}\\quad a=\\frac{d^2x}{dt^2}"
+  ],
+  "uniform_motion": [
+    "\\text{(1)}\\quad x=x_0+vt",
+    "\\text{(2)}\\quad v=\\text{const}",
+    "\\text{(3)}\\quad a=0",
+    "\\text{(4)}\\quad s=vt",
+    "\\text{(5)}\\quad t=\\frac{s}{v}"
+  ],
+  "accel_motion": [
+    "\\text{(1)}\\quad v=v_0+at",
+    "\\text{(2)}\\quad x=x_0+v_0t+\\frac{at^2}{2}",
+    "\\text{(3)}\\quad v^2=v_0^2+2as",
+    "\\text{(4)}\\quad a=\\text{const}",
+    "\\text{(5)}\\quad s=\\frac{(v+v_0)t}{2}"
+  ],
+  "newton_laws": [
+    "\\text{(1)}\\quad \\sum\\vec{F}=0 \\Rightarrow \\vec{v}=\\text{const}",
+    "\\text{(2)}\\quad \\vec{F}=m\\vec{a}",
+    "\\text{(3)}\\quad \\vec{F}_{12}=-\\vec{F}_{21}",
+    "\\text{(4)}\\quad \\text{инерциальные С.О.}",
+    "\\text{(5)}\\quad \\text{классическая динамика}"
+  ],
+  "forces": [
+    "\\text{(1)}\\quad \\vec{F} = m\\vec{a}",
+    "\\text{(2)}\\quad \\vec{F} = \\frac{d\\vec{p}}{dt}",
+    "\\text{(3)}\\quad \\vec{F} = -\\nabla V",
+    "\\text{(4)}\\quad [\\vec{F}] = \\text{Н}",
+    "\\text{(5)}\\quad \\text{причина изменения движения}"
+  ],
+  "complex_forces": [
+    "\\text{(1)}\\quad \\vec{F}_{\\text{рез}} = \\sum_i \\vec{F}_i",
+    "\\text{(2)}\\quad m\\vec{a} = \\sum_i \\vec{F}_i",
+    "\\text{(3)}\\quad F_x = F\\cos\\alpha",
+    "\\text{(4)}\\quad F_y = F\\sin\\alpha",
+    "\\text{(5)}\\quad \\text{принцип суперпозиции}"
+  ],
+  "friction_forces": [
+    "\\text{(1)}\\quad F_{\\text{тр}} = \\mu N",
+    "\\text{(2)}\\quad F_{\\text{пок}} \\le \\mu_s N",
+    "\\text{(3)}\\quad F_{\\text{ск}} = \\mu_k N",
+    "\\text{(4)}\\quad \\vec{F}_{\\text{тр}} \\parallel \\text{поверхности}",
+    "\\text{(5)}\\quad A_{\\text{тр}} < 0"
+  ],
+  "lever_principle": [
+    "\\text{(1)}\\quad M = F \\cdot l",
+    "\\text{(2)}\\quad F_1 l_1 = F_2 l_2",
+    "\\text{(3)}\\quad \\sum M = 0",
+    "\\text{(4)}\\quad \\text{точка опоры}",
+    "\\text{(5)}\\quad \\text{статическое равновесие}"
+  ],
+  "conservation": [
+    "\\text{(1)}\\quad E = \\text{const}",
+    "\\text{(2)}\\quad \\vec{p} = \\text{const}",
+    "\\text{(3)}\\quad \\vec{L} = \\text{const}",
+    "\\text{(4)}\\quad \\text{замкнутая система}",
+    "\\text{(5)}\\quad \\text{инварианты симметрий}"
+  ],
+  "energy": [
+    "\\text{(1)}\\quad T = \\frac{mv^2}{2}",
+    "\\text{(2)}\\quad V = mgh",
+    "\\text{(3)}\\quad E = T + V",
+    "\\text{(4)}\\quad \\Delta E = A",
+    "\\text{(5)}\\quad [E] = \\text{Дж}"
+  ],
+  "momentum": [
+    "\\text{(1)}\\quad \\vec{p} = m\\vec{v}",
+    "\\text{(2)}\\quad \\frac{d\\vec{p}}{dt} = \\vec{F}",
+    "\\text{(3)}\\quad \\sum \\vec{p} = \\text{const}",
+    "\\text{(4)}\\quad \\vec{J} = \\int \\vec{F}dt",
+    "\\text{(5)}\\quad \\text{количество движения}"
+  ],
+  "angular_momentum": [
+    "\\text{(1)}\\quad \\vec{L} = \\vec{r} \\times \\vec{p}",
+    "\\text{(2)}\\quad \\vec{M} = \\frac{d\\vec{L}}{dt}",
+    "\\text{(3)}\\quad L = I\\omega",
+    "\\text{(4)}\\quad I = \\sum m_ir_i^2",
+    "\\text{(5)}\\quad \\text{вращательная симметрия}"
+  ],
+  "oscillations": [
+    "\\text{(1)}\\quad x(t+T)=x(t)",
+    "\\text{(2)}\\quad T=\\frac{2\\pi}{\\omega}",
+    "\\text{(3)}\\quad \\omega = 2\\pi f",
+    "\\text{(4)}\\quad x(t)=A\\cos(\\omega t+\\varphi)",
+    "\\text{(5)}\\quad \\text{периодический процесс}"
+  ],
+  "harmonic": [
+    "\\text{(1)}\\quad F=-kx",
+    "\\text{(2)}\\quad m\\ddot{x}+kx=0",
+    "\\text{(3)}\\quad x(t)=A\\cos(\\omega t)",
+    "\\text{(4)}\\quad \\omega=\\sqrt{\\frac{k}{m}}",
+    "\\text{(5)}\\quad \\text{линейная система}"
+  ],
+  "damped": [
+    "\\text{(1)}\\quad m\\ddot{x}+b\\dot{x}+kx=0",
+    "\\text{(2)}\\quad A(t)=A_0e^{-\\gamma t}",
+    "\\text{(3)}\\quad \\gamma=\\frac{b}{2m}",
+    "\\text{(4)}\\quad E(t)\\downarrow",
+    "\\text{(5)}\\quad \\text{диссипация энергии}"
+  ],
+  "mech_waves": [
+    "\\text{(1)}\\quad v=\\lambda f",
+    "\\text{(2)}\\quad y(x,t)=A\\cos(kx-\\omega t)",
+    "\\text{(3)}\\quad k=\\frac{2\\pi}{\\lambda}",
+    "\\text{(4)}\\quad \\omega=2\\pi f",
+    "\\text{(5)}\\quad \\text{перенос энергии без переноса вещества}"
+  ],
+  "statics": [
+    "\\text{(1)}\\quad \\sum \\vec{F}=0",
+    "\\text{(2)}\\quad \\sum M=0",
+    "\\text{(3)}\\quad M=F\\cdot l",
+    "\\text{(4)}\\quad \\text{неподвижное тело}",
+    "\\text{(5)}\\quad \\text{инженерная основа}"
+  ],
+  "equilibrium": [
+    "\\text{(1)}\\quad \\sum F_x=0",
+    "\\text{(2)}\\quad \\sum F_y=0",
+    "\\text{(3)}\\quad \\sum M=0",
+    "\\text{(4)}\\quad \\vec{a}=0",
+    "\\text{(5)}\\quad \\text{баланс сил}"
+  ],
+  "pressure": [
+    "\\text{(1)}\\quad p=\\frac{F}{S}",
+    "\\text{(2)}\\quad P=Pa",
+    "\\text{(3)}\\quad F=pS",
+    "\\text{(4)}\\quad p(h)=p_0+\\rho gh",
+    "\\text{(5)}\\quad \\text{механика сплошных сред}"
+  ],
+  "archimedes": [
+    "\\text{(1)}\\quad F_A=\\rho gV",
+    "\\text{(2)}\\quad F_A=G_{\\text{жидкости}}",
+    "\\text{(3)}\\quad F_A\\uparrow V",
+    "\\text{(4)}\\quad \\text{условие плавания}",
+    "\\text{(5)}\\quad \\text{гидростатика}"
+  ],
+  "liquid_pressure": [
+    "\\text{(1)}\\quad p=p_0+\\rho gh",
+    "\\text{(2)}\\quad \\Delta p=\\rho gh",
+    "\\text{(3)}\\quad p\\sim h",
+    "\\text{(4)}\\quad \\text{не зависит от формы сосуда}",
+    "\\text{(5)}\\quad \\text{гидростатическое равновесие}"
+  ],
+  "thermodynamics": [
+    "\\text{(1)}\\quad dU=\\delta Q-\\delta A",
+    "\\text{(2)}\\quad U=U(T)",
+    "\\text{(3)}\\quad \\Delta U=Q-A",
+    "\\text{(4)}\\quad \\text{макроскопические системы}",
+    "\\text{(5)}\\quad \\text{обобщенные законы}"
+  ],
+  "thermo_laws": [
+    "\\text{(1)}\\quad \\Delta U=Q-A",
+    "\\text{(2)}\\quad \\Delta S \\ge 0",
+    "\\text{(3)}\\quad S \\to \\max",
+    "\\text{(4)}\\quad T \\ge 0",
+    "\\text{(5)}\\quad \\text{ограничения процессов}"
+  ],
+  "entropy": [
+    "\\text{(1)}\\quad S=k\\ln W",
+    "\\text{(2)}\\quad dS=\\frac{\\delta Q}{T}",
+    "\\text{(3)}\\quad \\Delta S \\ge 0",
+    "\\text{(4)}\\quad \\text{стрела времени}",
+    "\\text{(5)}\\quad \\text{необратимость}"
+  ],
+  "heat_machines": [
+    "\\text{(1)}\\quad \\eta=\\frac{A}{Q_1}",
+    "\\text{(2)}\\quad \\eta_{\\text{Карно}}=1-\\frac{T_2}{T_1}",
+    "\\text{(3)}\\quad Q_1=A+Q_2",
+    "\\text{(4)}\\quad \\text{цикл}",
+    "\\text{(5)}\\quad \\text{тепло } \\to \\text{работа}"
+  ],
+  "mkt": [
+    "\\text{(1)}\\quad p=\\frac{1}{3}nm\\langle v^2 \\rangle",
+    "\\text{(2)}\\quad T \\sim \\langle v^2 \\rangle",
+    "\\text{(3)}\\quad E_k=\\frac{3}{2}kT",
+    "\\text{(4)}\\quad \\text{хаотическое движение}",
+    "\\text{(5)}\\quad \\text{микрооснование термодинамики}"
+  ],
+  "ideal_gas": [
+    "\\text{(1)}\\quad pV=\\nu RT",
+    "\\text{(2)}\\quad pV=NkT",
+    "\\text{(3)}\\quad U=\\frac{3}{2}\\nu RT",
+    "\\text{(4)}\\quad \\text{точечные молекулы}",
+    "\\text{(5)}\\quad \\text{упругая модель}"
+  ],
+  "maxwell": [
+    "\\text{(1)}\\quad f(v)=4\\pi \\left(\\frac{m}{2\\pi kT}\\right)^{3/2}v^2e^{-mv^2/2kT}",
+    "\\text{(2)}\\quad v_{\\text{ср}}=\\sqrt{\\frac{8kT}{\\pi m}}",
+    "\\text{(3)}\\quad v_{\\text{кв}}=\\sqrt{\\frac{3kT}{m}}",
+    "\\text{(4)}\\quad \\text{статистика}",
+    "\\text{(5)}\\quad \\text{вероятностное описание}"
+  ],
+  "transport": [
+    "\\text{(1)}\\quad \\vec{j}=-D\\nabla n",
+    "\\text{(2)}\\quad q=-\\kappa\\nabla T",
+    "\\text{(3)}\\quad \\tau \\sim l/v",
+    "\\text{(4)}\\quad \\text{диффузия}",
+    "\\text{(5)}\\quad \\text{вязкость и теплопроводность}"
+  ],
+  "electromagnetism": [
+    "\\text{(1)}\\quad \\nabla\\cdot\\vec{E}=\\frac{\\rho}{\\varepsilon_0}",
+    "\\text{(2)}\\quad \\nabla\\times\\vec{B}=\\mu_0\\vec{j}",
+    "\\text{(3)}\\quad \\vec{F}=q(\\vec{E}+\\vec{v}\\times\\vec{B})",
+    "\\text{(4)}\\quad c=\\frac{1}{\\sqrt{\\varepsilon_0\\mu_0}}",
+    "\\text{(5)}\\quad \\text{единое поле}"
+  ],
+  "electrostatics": [
+    "\\text{(1)}\\quad \\vec{E}=\\frac{\\vec{F}}{q}",
+    "\\text{(2)}\\quad \\nabla\\cdot\\vec{E}=\\frac{\\rho}{\\varepsilon_0}",
+    "\\text{(3)}\\quad \\varphi=-\\int \\vec{E}\\cdot d\\vec{r}",
+    "\\text{(4)}\\quad \\vec{E}=-\\nabla\\varphi",
+    "\\text{(5)}\\quad \\text{поля покоя}"
+  ],
+  "current": [
+    "\\text{(1)}\\quad I=\\frac{dq}{dt}",
+    "\\text{(2)}\\quad I=\\frac{U}{R}",
+    "\\text{(3)}\\quad j=\\frac{I}{S}",
+    "\\text{(4)}\\quad P=UI",
+    "\\text{(5)}\\quad \\text{упорядоченное движение зарядов}"
+  ],
+  "magnetism": [
+    "\\text{(1)}\\quad \\vec{B}=\\nabla\\times\\vec{A}",
+    "\\text{(2)}\\quad \\vec{F}=q\\vec{v}\\times\\vec{B}",
+    "\\text{(3)}\\quad \\vec{F}=I\\vec{l}\\times\\vec{B}",
+    "\\text{(4)}\\quad \\vec{\\mu}=I\\vec{S}",
+    "\\text{(5)}\\quad \\text{магнитное поле и токи}"
+  ],
+  "maxwell_eq": [
+    "\\text{(1)}\\quad \\nabla\\cdot\\vec{E}=\\frac{\\rho}{\\varepsilon_0}",
+    "\\text{(2)}\\quad \\nabla\\cdot\\vec{B}=0",
+    "\\text{(3)}\\quad \\nabla\\times\\vec{E}=-\\frac{\\partial\\vec{B}}{\\partial t}",
+    "\\text{(4)}\\quad \\nabla\\times\\vec{B}=\\mu_0\\vec{j}+\\mu_0\\varepsilon_0\\frac{\\partial\\vec{E}}{\\partial t}",
+    "\\text{(5)}\\quad c=\\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}}"
+  ],
+  "em_flux_density": [
+    "\\text{(1)}\\quad \\vec{S}=\\vec{E}\\times\\vec{H}",
+    "\\text{(2)}\\quad |\\vec{S}|=\\frac{1}{\\mu_0}EB",
+    "\\text{(3)}\\quad W=\\int \\vec{S}\\cdot d\\vec{S}",
+    "\\text{(4)}\\quad [S]=\\text{Вт/м}^2",
+    "\\text{(5)}\\quad \\text{поток энергии}"
+  ],
+  "optics": [
+    "\\text{(1)}\\quad c=\\lambda f",
+    "\\text{(2)}\\quad n=\\frac{c}{v}",
+    "\\text{(3)}\\quad E=h\\nu",
+    "\\text{(4)}\\quad I\\sim |E|^2",
+    "\\text{(5)}\\quad \\text{волновое и квантовое описание}"
+  ],
+  "geo_optics": [
+    "\\text{(1)}\\quad n_1\\sin\\alpha=n_2\\sin\\beta",
+    "\\text{(2)}\\quad \\alpha=\\beta",
+    "\\text{(3)}\\quad \\frac{1}{f}=\\frac{1}{a}+\\frac{1}{b}",
+    "\\text{(4)}\\quad D=\\frac{1}{f}",
+    "\\text{(5)}\\quad \\text{лучевая модель}"
+  ],
+  "wave_optics": [
+    "\\text{(1)}\\quad I=I_0\\cos^2\\varphi",
+    "\\text{(2)}\\quad d\\sin\\theta=m\\lambda",
+    "\\text{(3)}\\quad \\Delta=\\frac{a\\sin\\theta}{\\lambda}",
+    "\\text{(4)}\\quad \\text{интерференция}",
+    "\\text{(5)}\\quad \\text{дифракция}"
+  ],
+  "photometry": [
+    "\\text{(1)}\\quad I=\\frac{d\\Phi}{d\\Omega}",
+    "\\text{(2)}\\quad E=\\frac{\\Phi}{S}",
+    "\\text{(3)}\\quad L=\\frac{dI}{dS}",
+    "\\text{(4)}\\quad [I]=\\text{кд}",
+    "\\text{(5)}\\quad \\text{учёт зрения человека}"
+  ],
+  "condensed_matter": [
+    "\\text{(1)}\\quad E(k)",
+    "\\text{(2)}\\quad \\rho(E)",
+    "\\text{(3)}\\quad \\sigma=ne\\mu",
+    "\\text{(4)}\\quad \\text{коллективные эффекты}",
+    "\\text{(5)}\\quad \\text{фазы вещества}"
+  ],
+  "statistical_physics": [
+    "\\text{(1)}\\quad \\langle A \\rangle = \\sum_i A_i p_i",
+    "\\text{(2)}\\quad p_i=\\frac{e^{-E_i/kT}}{Z}",
+    "\\text{(3)}\\quad Z=\\sum_i e^{-E_i/kT}",
+    "\\text{(4)}\\quad S=-k\\sum p_i\\ln p_i",
+    "\\text{(5)}\\quad \\text{связь микро и макро}"
+  ],
+  "analytical_mech": [
+    "\\text{(1)}\\quad S=\\int L\\,dt",
+    "\\text{(2)}\\quad \\delta S=0",
+    "\\text{(3)}\\quad L=T-V",
+    "\\text{(4)}\\quad \\text{обобщённые координаты}",
+    "\\text{(5)}\\quad \\text{вариационный принцип}"
+  ],
+  "lagrange": [
+    "\\text{(1)}\\quad L=T-V",
+    "\\text{(2)}\\quad \\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot q_i}-\\frac{\\partial L}{\\partial q_i}=0",
+    "\\text{(3)}\\quad q_i(t)",
+    "\\text{(4)}\\quad \\text{связи}",
+    "\\text{(5)}\\quad \\text{симметрии}"
+  ],
+  "hamilton": [
+    "\\text{(1)}\\quad H=\\sum p_i\\dot q_i-L",
+    "\\text{(2)}\\quad \\dot q_i=\\frac{\\partial H}{\\partial p_i}",
+    "\\text{(3)}\\quad \\dot p_i=-\\frac{\\partial H}{\\partial q_i}",
+    "\\text{(4)}\\quad \\{q,p\\}",
+    "\\text{(5)}\\quad \\text{фазовое пространство}"
+  ],
+  "celestial": [
+    "\\text{(1)}\\quad F=G\\frac{m_1m_2}{r^2}",
+    "\\text{(2)}\\quad v=\\sqrt{\\frac{GM}{r}}",
+    "\\text{(3)}\\quad T^2\\sim r^3",
+    "\\text{(4)}\\quad \\text{орбиты}",
+    "\\text{(5)}\\quad \\text{небесная механика}"
+  ],
+  "phase_transitions": [
+    "\\text{(1)}\\quad F(T)",
+    "\\text{(2)}\\quad \\frac{dF}{dT}",
+    "\\text{(3)}\\quad \\Delta S \\neq 0",
+    "\\text{(4)}\\quad \\text{порядок перехода}",
+    "\\text{(5)}\\quad \\text{симметрия}"
+  ],
+  "nuclear_physics": [
+    "\\text{(1)}\\quad E=\\Delta mc^2",
+    "\\text{(2)}\\quad A=Z+N",
+    "\\text{(3)}\\quad B/A",
+    "\\text{(4)}\\quad \\text{ядерные силы}",
+    "\\text{(5)}\\quad \\text{распады и реакции}"
+  ],
+  "hydrodynamics": [
+    "\\text{(1)}\\quad \\rho\\frac{d\\vec{v}}{dt}=-\\nabla p",
+    "\\text{(2)}\\quad \\nabla\\cdot\\vec{v}=0",
+    "\\text{(3)}\\quad p+\\rho gh=\\text{const}",
+    "\\text{(4)}\\quad \\text{поток}",
+    "\\text{(5)}\\quad \\text{сплошная среда}"
+  ],
+  "navier_stokes": [
+    "\\text{(1)}\\quad \\rho\\left(\\frac{\\partial \\vec{v}}{\\partial t}+(\\vec{v}\\cdot\\nabla)\\vec{v}\\right)",
+    "\\text{(2)}\\quad =-\\nabla p+\\eta\\nabla^2\\vec{v}",
+    "\\text{(3)}\\quad \\nabla\\cdot\\vec{v}=0",
+    "\\text{(4)}\\quad \\text{вязкость}",
+    "\\text{(5)}\\quad \\text{нелинейность}"
+  ],
+  "archaeophysics": [
+    "\\text{(1)}\\quad N(t)=N_0e^{-\\lambda t}",
+    "\\text{(2)}\\quad t=\\frac{1}{\\lambda}\\ln\\frac{N_0}{N}",
+    "\\text{(3)}\\quad \\text{датирование}",
+    "\\text{(4)}\\quad \\text{спектроскопия}",
+    "\\text{(5)}\\quad \\text{физические методы}"
+  ],
+  "wave_characteristics": [
+    "\\text{(1)}\\quad A",
+    "\\text{(2)}\\quad \\lambda",
+    "\\text{(3)}\\quad f",
+    "\\text{(4)}\\quad v=\\lambda f",
+    "\\text{(5)}\\quad \\omega=2\\pi f"
+  ],
+  "amplitude": [
+    "\\text{(1)}\\quad x_{\\max}=A",
+    "\\text{(2)}\\quad E\\sim A^2",
+    "\\text{(3)}\\quad A(t)",
+    "\\text{(4)}\\quad \\text{энергия}",
+    "\\text{(5)}\\quad \\text{интенсивность}"
+  ],
+  "wavelength": [
+    "\\text{(1)}\\quad \\lambda=\\frac{v}{f}",
+    "\\text{(2)}\\quad k=\\frac{2\\pi}{\\lambda}",
+    "\\text{(3)}\\quad \\Delta x=\\lambda",
+    "\\text{(4)}\\quad \\text{пространственный период}",
+    "\\text{(5)}\\quad \\text{волновая шкала}"
+  ],
+  "phase_velocity": [
+    "\\text{(1)}\\quad v_{ph}=\\frac{\\omega}{k}",
+    "\\text{(2)}\\quad v_{ph}=\\lambda f",
+    "\\text{(3)}\\quad v_{ph}\\neq v_g",
+    "\\text{(4)}\\quad \\text{фазовый перенос}",
+    "\\text{(5)}\\quad \\text{дисперсия}"
+  ],
+  "surface_tension": [
+    "\\text{(1)}\\quad \\sigma=\\frac{F}{l}",
+    "\\text{(2)}\\quad E=\\sigma S",
+    "\\text{(3)}\\quad \\Delta p=\\frac{2\\sigma}{R}",
+    "\\text{(4)}\\quad \\text{граница фаз}",
+    "\\text{(5)}\\quad \\text{капиллярность}"
+  ],
+  "pendulum_types": [
+    "\\text{(1)}\\quad \\text{математический}",
+    "\\text{(2)}\\quad \\text{физический}",
+    "\\text{(3)}\\quad \\text{крутильный}",
+    "\\text{(4)}\\quad \\text{пружинный}",
+    "\\text{(5)}\\quad \\text{колебательные системы}"
+  ],
+  "phys_pendulum": [
+    "\\text{(1)}\\quad T=2\\pi\\sqrt{\\frac{I}{mgl}}",
+    "\\text{(2)}\\quad I=\\sum mr^2",
+    "\\text{(3)}\\quad M=mgl",
+    "\\text{(4)}\\quad \\text{твёрдое тело}",
+    "\\text{(5)}\\quad \\text{вращение}"
+  ],
+  "math_pendulum": [
+    "\\text{(1)}\\quad T=2\\pi\\sqrt{\\frac{l}{g}}",
+    "\\text{(2)}\\quad \\ddot\\theta+\\frac{g}{l}\\theta=0",
+    "\\text{(3)}\\quad \\theta\\ll1",
+    "\\text{(4)}\\quad \\text{малые колебания}",
+    "\\text{(5)}\\quad \\text{идеализация}"
+  ],
+  "torsion_pendulum": [
+    "\\text{(1)}\\quad M=-k\\varphi",
+    "\\text{(2)}\\quad T=2\\pi\\sqrt{\\frac{I}{k}}",
+    "\\text{(3)}\\quad \\text{кручение}",
+    "\\text{(4)}\\quad \\text{упругость}",
+    "\\text{(5)}\\quad \\text{вращательные колебания}"
+  ],
+  "spring_pendulum": [
+    "\\text{(1)}\\quad F=-kx",
+    "\\text{(2)}\\quad T=2\\pi\\sqrt{\\frac{m}{k}}",
+    "\\text{(3)}\\quad E=\\frac{kx^2}{2}",
+    "\\text{(4)}\\quad \\text{гармонический осциллятор}",
+    "\\text{(5)}\\quad \\text{упругая система}"
+  ],
+  "oscillation_params": [
+    "\\text{(1)}\\quad A",
+    "\\text{(2)}\\quad T",
+    "\\text{(3)}\\quad f",
+    "\\text{(4)}\\quad \\omega",
+    "\\text{(5)}\\quad \\varphi"
+  ],
+  "oscillation_period": [
+    "\\text{(1)}\\quad T=\\frac{1}{f}",
+    "\\text{(2)}\\quad T=\\frac{2\\pi}{\\omega}",
+    "\\text{(3)}\\quad t_{\\text{цикл}}",
+    "\\text{(4)}\\quad \\text{повторяемость}",
+    "\\text{(5)}\\quad \\text{временной масштаб}"
+  ],
+  "angular_frequency": [
+    "\\text{(1)}\\quad \\omega=2\\pi f",
+    "\\text{(2)}\\quad \\omega=\\frac{2\\pi}{T}",
+    "\\text{(3)}\\quad \\dot\\varphi=\\omega",
+    "\\text{(4)}\\quad [\\omega]=\\text{рад/с}",
+    "\\text{(5)}\\quad \\text{фазовая скорость}"
+  ],
+  "frequency": [
+    "\\text{(1)}\\quad f=\\frac{1}{T}",
+    "\\text{(2)}\\quad f=\\frac{\\omega}{2\\pi}",
+    "\\text{(3)}\\quad f\\;\\text{(Гц)}",
+    "\\text{(4)}\\quad \\text{темп процесса}",
+    "\\text{(5)}\\quad \\text{периодичность}"
+  ],
+  "em_oscillations": [
+    "\\text{(1)}\\quad q(t)=q_0\\cos(\\omega t)",
+    "\\text{(2)}\\quad \\omega=\\frac{1}{\\sqrt{LC}}",
+    "\\text{(3)}\\quad I=\\dot q",
+    "\\text{(4)}\\quad E_E \\leftrightarrow E_B",
+    "\\text{(5)}\\quad \\text{LC-контур}"
+  ],
+  "em_period": [
+    "\\text{(1)}\\quad T=2\\pi\\sqrt{LC}",
+    "\\text{(2)}\\quad T=\\frac{1}{f}",
+    "\\text{(3)}\\quad \\omega T=2\\pi",
+    "\\text{(4)}\\quad \\text{электромагнитные колебания}",
+    "\\text{(5)}\\quad \\text{временная шкала}"
+  ],
+  "resonance_frequency": [
+    "\\text{(1)}\\quad \\omega_0=\\frac{1}{\\sqrt{LC}}",
+    "\\text{(2)}\\quad f_0=\\frac{1}{2\\pi\\sqrt{LC}}",
+    "\\text{(3)}\\quad A\\to\\max",
+    "\\text{(4)}\\quad \\text{резонанс}",
+    "\\text{(5)}\\quad \\text{обмен энергией}"
+  ],
+  "wave_speeds": [
+    "\\text{(1)}\\quad v=\\lambda f",
+    "\\text{(2)}\\quad v_{\\text{зв}}",
+    "\\text{(3)}\\quad v_{\\text{свет}}",
+    "\\text{(4)}\\quad v_{ph}",
+    "\\text{(5)}\\quad \\text{свойство среды}"
+  ],
+  "sound_speed_gas": [
+    "\\text{(1)}\\quad v=\\sqrt{\\gamma\\frac{RT}{M}}",
+    "\\text{(2)}\\quad v\\sim\\sqrt{T}",
+    "\\text{(3)}\\quad \\gamma=\\frac{C_p}{C_v}",
+    "\\text{(4)}\\quad \\text{упругие волны}",
+    "\\text{(5)}\\quad \\text{газовая среда}"
+  ],
+  "electricity_speed": [
+    "\\text{(1)}\\quad v\\approx c",
+    "\\text{(2)}\\quad v=\\frac{1}{\\sqrt{LC}}",
+    "\\text{(3)}\\quad \\text{линии передачи}",
+    "\\text{(4)}\\quad \\text{электромагнитный сигнал}",
+    "\\text{(5)}\\quad \\text{не скорость электронов}"
+  ],
+  "em_wave_speed": [
+    "\\text{(1)}\\quad v=\\frac{c}{n}",
+    "\\text{(2)}\\quad n=\\sqrt{\\varepsilon\\mu}",
+    "\\text{(3)}\\quad v<c",
+    "\\text{(4)}\\quad \\text{среда}",
+    "\\text{(5)}\\quad \\text{преломление}"
+  ],
+  "phase_wave_speed": [
+    "\\text{(1)}\\quad v_{ph}=\\frac{\\omega}{k}",
+    "\\text{(2)}\\quad v_{ph}=\\lambda f",
+    "\\text{(3)}\\quad v_{ph}>c \\; (\\text{допустимо})",
+    "\\text{(4)}\\quad \\text{не перенос энергии}",
+    "\\text{(5)}\\quad \\text{дисперсия}"
+  ],
+  "wave_effects": [
+    "\\text{(1)}\\quad \\text{интерференция}",
+    "\\text{(2)}\\quad \\text{дифракция}",
+    "\\text{(3)}\\quad \\text{доплеровский эффект}",
+    "\\text{(4)}\\quad \\text{дисперсия}",
+    "\\text{(5)}\\quad \\text{волновая природа}"
+  ],
+  "doppler_effect": [
+    "\\text{(1)}\\quad f'=f\\left(\\frac{v\\pm v_o}{v\\mp v_s}\\right)",
+    "\\text{(2)}\\quad \\lambda'=\\frac{v}{f'}",
+    "\\text{(3)}\\quad \\Delta f= f'-f",
+    "\\text{(4)}\\quad v=\\lambda f",
+    "\\text{(5)}\\quad \\text{относительное движение}"
+  ],
+  "pause_law": [
+    "\\text{(1)}\\quad \\frac{d\\varphi}{dt}\\approx 0",
+    "\\text{(2)}\\quad \\frac{dA}{dt}\\approx 0",
+    "\\text{(3)}\\quad x(t)\\approx \\text{const}",
+    "\\text{(4)}\\quad \\text{квазистационарный участок}",
+    "\\text{(5)}\\quad \\text{учебная модель}"
+  ],
+  "period_frequency": [
+    "\\text{(1)}\\quad f=\\frac{1}{T}",
+    "\\text{(2)}\\quad T=\\frac{1}{f}",
+    "\\text{(3)}\\quad \\omega=2\\pi f",
+    "\\text{(4)}\\quad T=\\frac{2\\pi}{\\omega}",
+    "\\text{(5)}\\quad \\text{двойственное описание}"
+  ],
+  "wave_speed_relation": [
+    "\\text{(1)}\\quad v=\\lambda f",
+    "\\text{(2)}\\quad v=\\frac{\\omega}{k}",
+    "\\text{(3)}\\quad \\lambda=\\frac{v}{f}",
+    "\\text{(4)}\\quad f=\\frac{v}{\\lambda}",
+    "\\text{(5)}\\quad \\text{временная и пространственная связь}"
+  ],
+  "medium_properties": [
+    "\\text{(1)}\\quad v=\\sqrt{\\frac{K}{\\rho}}",
+    "\\text{(2)}\\quad v_{\\text{зв}}=\\sqrt{\\gamma\\frac{p}{\\rho}}",
+    "\\text{(3)}\\quad v=\\frac{1}{\\sqrt{\\varepsilon\\mu}}",
+    "\\text{(4)}\\quad \\alpha\\sim \\eta",
+    "\\text{(5)}\\quad \\text{роль среды}"
+  ],
+  "wave_relations": [
+    "\\text{(1)}\\quad \\omega=\\omega(k)",
+    "\\text{(2)}\\quad v_g=\\frac{d\\omega}{dk}",
+    "\\text{(3)}\\quad v_{ph}=\\frac{\\omega}{k}",
+    "\\text{(4)}\\quad k_1\\sin\\theta_1=k_2\\sin\\theta_2",
+    "\\text{(5)}\\quad \\text{граничные условия}"
+  ],
+  "light_characteristics": [
+    "\\text{(1)}\\quad c=\\lambda f",
+    "\\text{(2)}\\quad E=h\\nu",
+    "\\text{(3)}\\quad p=\\frac{E}{c}",
+    "\\text{(4)}\\quad I\\sim |E|^2",
+    "\\text{(5)}\\quad \\text{волна и квант}"
+  ],
+  "wavelength_visible": [
+    "\\text{(1)}\\quad 380\\,\\text{нм} < \\lambda < 750\\,\\text{нм}",
+    "\\text{(2)}\\quad \\lambda_{\\text{красн}} > \\lambda_{\\text{фиол}}",
+    "\\text{(3)}\\quad f=\\frac{c}{\\lambda}",
+    "\\text{(4)}\\quad \\text{видимый спектр}",
+    "\\text{(5)}\\quad \\text{границы зрения}"
+  ],
+  "wave_number": [
+    "\\text{(1)}\\quad k=\\frac{2\\pi}{\\lambda}",
+    "\\text{(2)}\\quad \\lambda=\\frac{2\\pi}{k}",
+    "\\text{(3)}\\quad \\psi\\sim e^{ikx}",
+    "\\text{(4)}\\quad [k]=\\text{м}^{-1}",
+    "\\text{(5)}\\quad \\text{пространственная частота}"
+  ],
+  "light_intensity": [
+    "\\text{(1)}\\quad I=\\frac{P}{S}",
+    "\\text{(2)}\\quad I=\\frac{dW}{dSdt}",
+    "\\text{(3)}\\quad I\\sim E^2",
+    "\\text{(4)}\\quad [I]=\\text{Вт/м}^2",
+    "\\text{(5)}\\quad \\text{энергетическая мера}"
+  ],
+  "refractive_index": [
+    "\\text{(1)}\\quad n=\\frac{c}{v}",
+    "\\text{(2)}\\quad n=\\sqrt{\\varepsilon\\mu}",
+    "\\text{(3)}\\quad \\sin\\alpha= n\\sin\\beta",
+    "\\text{(4)}\\quad n>1",
+    "\\text{(5)}\\quad \\text{преломление}"
+  ],
+  "photometric_quantities": [
+    "\\text{(1)}\\quad \\Phi",
+    "\\text{(2)}\\quad I=\\frac{d\\Phi}{d\\Omega}",
+    "\\text{(3)}\\quad E=\\frac{\\Phi}{S}",
+    "\\text{(4)}\\quad L=\\frac{dI}{dS}",
+    "\\text{(5)}\\quad \\text{зрительное восприятие}"
+  ],
+  "light_sources": [
+    "\\text{(1)}\\quad \\Phi=\\int I\\,d\\Omega",
+    "\\text{(2)}\\quad I(\\theta)",
+    "\\text{(3)}\\quad \\text{спектр излучения}",
+    "\\text{(4)}\\quad \\text{направленность}",
+    "\\text{(5)}\\quad \\text{мощность}"
+  ],
+  "luminous_intensity": [
+    "\\text{(1)}\\quad I=\\frac{d\\Phi}{d\\Omega}",
+    "\\text{(2)}\\quad [I]=\\text{кандела}",
+    "\\text{(3)}\\quad I(\\theta)",
+    "\\text{(4)}\\quad \\text{направленный поток}",
+    "\\text{(5)}\\quad \\text{фотометрия}"
+  ],
+  "intensity_angle": [
+    "\\text{(1)}\\quad I=\\frac{d\\Phi}{d\\Omega}",
+    "\\text{(2)}\\quad I(\\theta)",
+    "\\text{(3)}\\quad \\Phi=\\int I\\,d\\Omega",
+    "\\text{(4)}\\quad \\text{направленность излучения}",
+    "\\text{(5)}\\quad \\text{телесный угол}"
+  ],
+  "luminosity": [
+    "\\text{(1)}\\quad \\Phi=\\int I\\,d\\Omega",
+    "\\text{(2)}\\quad \\Phi_{\\text{общ}}",
+    "\\text{(3)}\\quad \\Phi_{\\text{ЛМ}}",
+    "\\text{(4)}\\quad \\text{световая мощность}",
+    "\\text{(5)}\\quad \\text{интегральная характеристика}"
+  ],
+  "brightness": [
+    "\\text{(1)}\\quad L=\\frac{d^2\\Phi}{dS\\,d\\Omega}",
+    "\\text{(2)}\\quad L=\\frac{I}{S}",
+    "\\text{(3)}\\quad [L]=\\text{кд/м}^2",
+    "\\text{(4)}\\quad \\text{поверхностная мера}",
+    "\\text{(5)}\\quad \\text{визуальная интенсивность}"
+  ],
+  "illuminance": [
+    "\\text{(1)}\\quad E=\\frac{\\Phi}{S}",
+    "\\text{(2)}\\quad E=\\frac{I}{r^2}",
+    "\\text{(3)}\\quad E=I\\cos\\theta",
+    "\\text{(4)}\\quad [E]=\\text{лк}",
+    "\\text{(5)}\\quad \\text{освещённость}"
+  ],
+  "illuminance_intensity": [
+    "\\text{(1)}\\quad E=\\frac{I\\cos\\theta}{r^2}",
+    "\\text{(2)}\\quad E\\propto I",
+    "\\text{(3)}\\quad E\\downarrow \\text{ при } r\\uparrow",
+    "\\text{(4)}\\quad E\\;\\mathrm{лк}",
+    "\\text{(5)}\\quad \\text{закон обратных квадратов}"
+  ],
+  "lens_characteristics": [
+    "\\text{(1)}\\quad \\frac{1}{f}=\\frac{1}{a}+\\frac{1}{b}",
+    "\\text{(2)}\\quad \\Gamma=\\frac{b}{a}",
+    "\\text{(3)}\\quad D=\\frac{1}{f}",
+    "\\text{(4)}\\quad \\text{собирающая / рассеивающая}",
+    "\\text{(5)}\\quad \\text{геометрия линзы}"
+  ],
+  "optical_params": [
+    "\\text{(1)}\\quad f",
+    "\\text{(2)}\\quad D=\\frac{1}{f}",
+    "\\text{(3)}\\quad \\text{апертура}",
+    "\\text{(4)}\\quad \\text{разрешение}",
+    "\\text{(5)}\\quad \\text{оптическая система}"
+  ],
+  "focal_length": [
+    "\\text{(1)}\\quad f=\\frac{ab}{a+b}",
+    "\\text{(2)}\\quad f>0 \\; (\\text{собирающая})",
+    "\\text{(3)}\\quad f<0 \\; (\\text{рассеивающая})",
+    "\\text{(4)}\\quad \\text{фокус}",
+    "\\text{(5)}\\quad \\text{параллельные лучи}"
+  ],
+  "optical_power": [
+    "\\text{(1)}\\quad D=\\frac{1}{f}",
+    "\\text{(2)}\\quad D\\;\\text{(дптр)}",
+    "\\text{(3)}\\quad D>0,\\,D<0",
+    "\\text{(4)}\\quad \\text{преломляющая способность}",
+    "\\text{(5)}\\quad \\text{прикладная оптика}"
+  ],
+  "angular_characteristics": [
+    "\\text{(1)}\\quad \\theta",
+    "\\text{(2)}\\quad \\Delta\\theta",
+    "\\text{(3)}\\quad \\theta_{\\min}",
+    "\\text{(4)}\\quad \\text{поле зрения}",
+    "\\text{(5)}\\quad \\text{угловое разрешение}"
+  ],
+  "spatial_params": [
+    "\\text{(1)}\\quad x,y,z",
+    "\\text{(2)}\\quad r",
+    "\\text{(3)}\\quad \\Delta x",
+    "\\text{(4)}\\quad \\text{распределение интенсивности}",
+    "\\text{(5)}\\quad \\text{геометрия пучка}"
+  ],
+  "solid_angle": [
+    "\\text{(1)}\\quad d\\Omega=\\frac{dS}{r^2}",
+    "\\text{(2)}\\quad \\Omega=4\\pi",
+    "\\text{(3)}\\quad [\\Omega]=\\text{ср}",
+    "\\text{(4)}\\quad \\text{пространственный угол}",
+    "\\text{(5)}\\quad \\text{направленные потоки}"
+  ],
+  "light_laws": [
+    "\\text{(1)}\\quad \\alpha=\\beta",
+    "\\text{(2)}\\quad n_1\\sin\\alpha=n_2\\sin\\beta",
+    "\\text{(3)}\\quad I\\sim \\cos\\theta",
+    "\\text{(4)}\\quad \\text{отражение и преломление}",
+    "\\text{(5)}\\quad \\text{геометрическая оптика}"
+  ],
+  "malus_law": [
+    "\\text{(1)}\\quad I=I_0\\cos^2\\theta",
+    "\\text{(2)}\\quad \\theta=\\angle(\\vec{E},\\text{анализатор})",
+    "\\text{(3)}\\quad I\\to 0",
+    "\\text{(4)}\\quad \\text{поляризация}",
+    "\\text{(5)}\\quad \\text{анализатор}"
+  ],
+  "wien_law": [
+    "\\text{(1)}\\quad \\lambda_{\\max}T=b",
+    "\\text{(2)}\\quad b=2.9\\cdot10^{-3}\\,\\text{м·К}",
+    "\\text{(3)}\\quad T\\uparrow \\Rightarrow \\lambda_{\\max}\\downarrow",
+    "\\text{(4)}\\quad \\text{чёрное тело}",
+    "\\text{(5)}\\quad \\text{спектральный максимум}"
+  ],
+  "rayleigh_jeans": [
+    "\\text{(1)}\\quad u(\\nu)=\\frac{8\\pi kT\\nu^2}{c^3}",
+    "\\text{(2)}\\quad u(\\lambda)\\sim \\frac{T}{\\lambda^4}",
+    "\\text{(3)}\\quad \\lambda\\to \\infty",
+    "\\text{(4)}\\quad \\text{ультрафиолетовая катастрофа}",
+    "\\text{(5)}\\quad \\text{классический предел}"
+  ],
+  "ohm_law": [
+    "\\text{(1)}\\quad I=\\frac{U}{R}",
+    "\\text{(2)}\\quad U=IR",
+    "\\text{(3)}\\quad R=\\frac{U}{I}",
+    "\\text{(4)}\\quad R=\\rho\\frac{l}{S}",
+    "\\text{(5)}\\quad \\text{линейный режим}"
+  ],
+  "faraday_law": [
+    "\\text{(1)}\\quad \\mathcal{E}=-\\frac{d\\Phi}{dt}",
+    "\\text{(2)}\\quad \\Phi=\\int \\vec{B}\\cdot d\\vec{S}",
+    "\\text{(3)}\\quad \\oint \\vec{E}\\cdot d\\vec{l}=-\\frac{d\\Phi}{dt}",
+    "\\text{(4)}\\quad \\text{закон индукции}",
+    "\\text{(5)}\\quad \\text{переменное поле}"
+  ],
+  "kirchhoff_laws": [
+    "\\text{(1)}\\quad \\sum I=0",
+    "\\text{(2)}\\quad \\sum U=0",
+    "\\text{(3)}\\quad \\text{узловое правило}",
+    "\\text{(4)}\\quad \\text{контурное правило}",
+    "\\text{(5)}\\quad \\text{закон сохранения}"
+  ],
+  "lorentz_force": [
+    "\\text{(1)}\\quad \\vec{F}=q(\\vec{E}+\\vec{v}\\times\\vec{B})",
+    "\\text{(2)}\\quad \\vec{F}_E=q\\vec{E}",
+    "\\text{(3)}\\quad \\vec{F}_B=q\\vec{v}\\times\\vec{B}",
+    "\\text{(4)}\\quad \\vec{F}\\perp \\vec{v}",
+    "\\text{(5)}\\quad \\text{движение заряда}"
+  ],
+  "resistance": [
+    "\\text{(1)}\\quad R=\\frac{U}{I}",
+    "\\text{(2)}\\quad R=\\rho\\frac{l}{S}",
+    "\\text{(3)}\\quad R(T)=R_0(1+\\alpha T)",
+    "\\text{(4)}\\quad [R]=\\Omega",
+    "\\text{(5)}\\quad \\text{материал и геометрия}"
+  ],
+  "capacitors": [
+    "\\text{(1)}\\quad C=\\frac{Q}{U}",
+    "\\text{(2)}\\quad C=\\varepsilon\\varepsilon_0\\frac{S}{d}",
+    "\\text{(3)}\\quad W=\\frac{CU^2}{2}",
+    "\\text{(4)}\\quad Q=CU",
+    "\\text{(5)}\\quad \\text{накопление энергии}"
+  ],
+  "emf": [
+    "\\text{(1)}\\quad \\mathcal{E}=\\frac{A}{q}",
+    "\\text{(2)}\\quad U=\\mathcal{E}-Ir",
+    "\\text{(3)}\\quad \\mathcal{E}\\neq U",
+    "\\text{(4)}\\quad \\text{сторонние силы}",
+    "\\text{(5)}\\quad \\text{источник тока}"
+  ],
+  "power": [
+    "\\text{(1)}\\quad P=UI",
+    "\\text{(2)}\\quad P=I^2R",
+    "\\text{(3)}\\quad P=\\frac{U^2}{R}",
+    "\\text{(4)}\\quad [P]=\\text{Вт}",
+    "\\text{(5)}\\quad \\text{энергетика цепей}"
+  ],
+  "energy_density": [
+    "\\text{(1)}\\quad w=\\frac{\\varepsilon E^2}{2}",
+    "\\text{(2)}\\quad w=\\frac{B^2}{2\\mu}",
+    "\\text{(3)}\\quad w=w_E+w_B",
+    "\\text{(4)}\\quad [w]=\\text{Дж/м}^3",
+    "\\text{(5)}\\quad \\text{энергия поля}"
+  ],
+  "h_theorem": [
+    "\\text{(1)}\\quad H=\\int f\\ln f\\,d^3p",
+    "\\text{(2)}\\quad \\frac{dH}{dt}\\le 0",
+    "\\text{(3)}\\quad S=-kH",
+    "\\text{(4)}\\quad S\\uparrow",
+    "\\text{(5)}\\quad \\text{необратимость}"
+  ],
+  "gas_laws": [
+    "\\text{(1)}\\quad pV=\\text{const}",
+    "\\text{(2)}\\quad \\frac{V}{T}=\\text{const}",
+    "\\text{(3)}\\quad \\frac{p}{T}=\\text{const}",
+    "\\text{(4)}\\quad pV=nRT",
+    "\\text{(5)}\\quad \\text{термодинамика газа}"
+  ],
+  "boyle_mariotte": [
+    "\\text{(1)}\\quad pV=\\text{const}",
+    "\\text{(2)}\\quad T=\\text{const}",
+    "\\text{(3)}\\quad p\\sim \\frac{1}{V}",
+    "\\text{(4)}\\quad \\text{изотерма}",
+    "\\text{(5)}\\quad \\text{сжатие газа}"
+  ],
+  "charles_law": [
+    "\\text{(1)}\\quad \\frac{V}{T}=\\text{const}",
+    "\\text{(2)}\\quad p=\\text{const}",
+    "\\text{(3)}\\quad V\\sim T",
+    "\\text{(4)}\\quad T\\uparrow \\Rightarrow V\\uparrow",
+    "\\text{(5)}\\quad \\text{изобара}"
+  ],
+  "dalton_law": [
+    "\\text{(1)}\\quad p=\\sum p_i",
+    "\\text{(2)}\\quad p_i=\\frac{n_iRT}{V}",
+    "\\text{(3)}\\quad p_i\\sim n_i",
+    "\\text{(4)}\\quad \\text{смесь газов}",
+    "\\text{(5)}\\quad \\text{идеальное поведение}"
+  ],
+  "molecular_motion": [
+    "\\text{(1)}\\quad \\langle E_k\\rangle=\\frac{3}{2}kT",
+    "\\text{(2)}\\quad p\\sim n\\langle v^2\\rangle",
+    "\\text{(3)}\\quad T\\sim \\langle v^2\\rangle",
+    "\\text{(4)}\\quad \\text{хаотическое движение}",
+    "\\text{(5)}\\quad \\text{микрооснова}"
+  ],
+  "mean_free_path": [
+    "\\text{(1)}\\quad \\lambda=\\frac{1}{\\sqrt{2}\\pi d^2 n}",
+    "\\text{(2)}\\quad n=\\frac{N}{V}",
+    "\\text{(3)}\\quad \\lambda\\downarrow \\Rightarrow p\\uparrow",
+    "\\text{(4)}\\quad \\text{газовая среда}",
+    "\\text{(5)}\\quad \\text{перенос}"
+  ],
+  "molecular_speeds": [
+    "\\text{(1)}\\quad f(v)=4\\pi\\left(\\frac{m}{2\\pi kT}\\right)^{3/2}v^2e^{-mv^2/2kT}",
+    "\\text{(2)}\\quad v_{\\text{ср}}=\\sqrt{\\frac{8kT}{\\pi m}}",
+    "\\text{(3)}\\quad v_{\\text{кв}}=\\sqrt{\\frac{3kT}{m}}",
+    "\\text{(4)}\\quad v_{\\max}=\\sqrt{\\frac{2kT}{m}}",
+    "\\text{(5)}\\quad \\text{распределение Максвелла}"
+  ],
+  "state_equations": [
+    "\\text{(1)}\\quad pV=nRT",
+    "\\text{(2)}\\quad p=p(V,T)",
+    "\\text{(3)}\\quad V=V(p,T)",
+    "\\text{(4)}\\quad T=T(p,V)",
+    "\\text{(5)}\\quad \\text{уравнение состояния}"
+  ],
+  "clausius_clapeyron": [
+    "\\text{(1)}\\quad \\frac{dp}{dT}=\\frac{L}{T\\Delta V}",
+    "\\text{(2)}\\quad L=\\text{теплота фазового перехода}",
+    "\\text{(3)}\\quad p(T)",
+    "\\text{(4)}\\quad \\text{линия фаз}",
+    "\\text{(5)}\\quad \\text{равновесие}"
+  ],
+  "mendeleev_clapeyron": [
+    "\\text{(1)}\\quad pV=nRT",
+    "\\text{(2)}\\quad R=8.31\\,\\text{Дж/(моль·К)}",
+    "\\text{(3)}\\quad T>0",
+    "\\text{(4)}\\quad \\text{идеальный газ}",
+    "\\text{(5)}\\quad \\text{макроскопическая модель}"
+  ],
+  "humidity": [
+    "\\text{(1)}\\quad \\varphi=\\frac{p}{p_0}",
+    "\\text{(2)}\\quad p=\\text{парциальное давление}",
+    "\\text{(3)}\\quad 0\\le \\varphi\\le1",
+    "\\text{(4)}\\quad \\text{влажный воздух}",
+    "\\text{(5)}\\quad \\text{климат}"
+  ],
+  "absolute_humidity": [
+    "\\text{(1)}\\quad \\rho=\\frac{m}{V}",
+    "\\text{(2)}\\quad [\\rho]=\\text{кг/м}^3",
+    "\\text{(3)}\\quad m_{\\text{пара}}",
+    "\\text{(4)}\\quad \\text{масса влаги}",
+    "\\text{(5)}\\quad \\text{количественная мера}"
+  ],
+  "heat_quantity": [
+    "\\text{(1)}\\quad Q=cm\\Delta T",
+    "\\text{(2)}\\quad dQ=T dS",
+    "\\text{(3)}\\quad Q\\neq U",
+    "\\text{(4)}\\quad \\text{процессная величина}",
+    "\\text{(5)}\\quad \\text{теплопередача}"
+  ],
+  "current_interaction": [
+    "\\text{(1)}\\quad \\frac{F}{l}=\\frac{\\mu_0 I_1 I_2}{2\\pi r}",
+    "\\text{(2)}\\quad I_1\\parallel I_2",
+    "\\text{(3)}\\quad F\\sim I^2",
+    "\\text{(4)}\\quad \\text{магнитное поле}",
+    "\\text{(5)}\\quad \\text{электродинамика}"
+  ],
+  "fundamental_constants": [
+    "\\text{(1)}\\quad c",
+    "\\text{(2)}\\quad h",
+    "\\text{(3)}\\quad G",
+    "\\text{(4)}\\quad k",
+    "\\text{(5)}\\quad \\text{масштабы природы}"
+  ],
+  "g_constant": [
+    "\\text{(1)}\\quad F=G\\frac{m_1m_2}{r^2}",
+    "\\text{(2)}\\quad G=6.67\\cdot10^{-11}",
+    "\\text{(3)}\\quad [G]=\\text{Н·м}^2/\\text{кг}^2",
+    "\\text{(4)}\\quad \\text{гравитация}",
+    "\\text{(5)}\\quad \\text{универсальность}"
+  ],
+  "free_fall_accel": [
+    "\\text{(1)}\\quad g\\approx9.8\\,\\text{м/с}^2",
+    "\\text{(2)}\\quad F=mg",
+    "\\text{(3)}\\quad g=g(h,\\varphi)",
+    "\\text{(4)}\\quad \\text{поле Земли}",
+    "\\text{(5)}\\quad \\text{свободное падение}"
+  ],
+  "bohr_radius": [
+    "\\text{(1)}\\quad a_0=\\frac{\\hbar^2}{m e^2}",
+    "\\text{(2)}\\quad a_0\\approx0.53\\,\\text{Å}",
+    "\\text{(3)}\\quad r_n=n^2a_0",
+    "\\text{(4)}\\quad \\text{атом водорода}",
+    "\\text{(5)}\\quad \\text{квантование}"
+  ],
+  "proton_mass": [
+    "\\text{(1)}\\quad m_p=1.67\\cdot10^{-27}\\,\\text{кг}",
+    "\\text{(2)}\\quad E=m_pc^2",
+    "\\text{(3)}\\quad \\text{ядерная физика}",
+    "\\text{(4)}\\quad \\text{барион}",
+    "\\text{(5)}\\quad \\text{масштаб массы}"
+  ],
+  "neutron_mass": [
+    "\\text{(1)}\\quad m_n=1.675\\cdot10^{-27}\\,\\text{кг}",
+    "\\text{(2)}\\quad m_n>m_p",
+    "\\text{(3)}\\quad \\beta\\text{-распад}",
+    "\\text{(4)}\\quad \\text{ядра}",
+    "\\text{(5)}\\quad \\text{стабильность}"
+  ],
+  "electron_mass": [
+    "\\text{(1)}\\quad m_e=9.11\\cdot10^{-31}\\,\\text{кг}",
+    "\\text{(2)}\\quad \\frac{m_e}{m_p}\\ll1",
+    "\\text{(3)}\\quad \\text{атомные масштабы}",
+    "\\text{(4)}\\quad \\text{квантовые эффекты}",
+    "\\text{(5)}\\quad \\text{микрофизика}"
+  ],
+  "planck_constant": [
+    "\\text{(1)}\\quad E=h\\nu",
+    "\\text{(2)}\\quad h=6.63\\cdot10^{-34}\\,\\text{Дж·с}",
+    "\\text{(3)}\\quad \\hbar=\\frac{h}{2\\pi}",
+    "\\text{(4)}\\quad \\text{квантование}",
+    "\\text{(5)}\\quad \\text{переход к квантам}"
+  ],
+  "fine_structure": [
+    "\\text{(1)}\\quad \\alpha=\\frac{e^2}{\\hbar c}",
+    "\\text{(2)}\\quad \\alpha\\approx\\frac{1}{137}",
+    "\\text{(3)}\\quad \\text{электромагнетизм}",
+    "\\text{(4)}\\quad \\text{атомные спектры}",
+    "\\text{(5)}\\quad \\text{безразмерность}"
+  ],
+  "elementary_charge": [
+    "\\text{(1)}\\quad e=1.6\\cdot10^{-19}\\,\\text{Кл}",
+    "\\text{(2)}\\quad q=ne",
+    "\\text{(3)}\\quad \\text{квант заряда}",
+    "\\text{(4)}\\quad \\text{сохранение}",
+    "\\text{(5)}\\quad \\text{электродинамика}"
+  ],
+  "speed_of_light": [
+    "\\text{(1)}\\quad c=3\\cdot10^8\\,\\text{м/с}",
+    "\\text{(2)}\\quad E=mc^2",
+    "\\text{(3)}\\quad c=\\frac{1}{\\sqrt{\\varepsilon_0\\mu_0}}",
+    "\\text{(4)}\\quad \\text{предел скорости}",
+    "\\text{(5)}\\quad \\text{релятивизм}"
+  ],
+  "avogadro_number": [
+    "\\text{(1)}\\quad N_A=6.02\\cdot10^{23}",
+    "\\text{(2)}\\quad N=nN_A",
+    "\\text{(3)}\\quad \\text{моль}",
+    "\\text{(4)}\\quad \\text{микро–макро}",
+    "\\text{(5)}\\quad \\text{вещество}"
+  ],
+  "gas_constant": [
+    "\\text{(1)}\\quad R=8.31\\,\\text{Дж/(моль·К)}",
+    "\\text{(2)}\\quad pV=nRT",
+    "\\text{(3)}\\quad R=N_Ak",
+    "\\text{(4)}\\quad \\text{термодинамика}",
+    "\\text{(5)}\\quad \\text{идеальный газ}"
+  ],
+  "quantum_basics": [
+    "\\text{(1)}\\quad E_n=n\\hbar\\omega",
+    "\\text{(2)}\\quad \\psi=\\sum c_n\\psi_n",
+    "\\text{(3)}\\quad P=|\\psi|^2",
+    "\\text{(4)}\\quad \\text{квантование}",
+    "\\text{(5)}\\quad \\text{вероятность}"
+  ],
+  "wave_particle": [
+    "\\text{(1)}\\quad \\lambda=\\frac{h}{p}",
+    "\\text{(2)}\\quad E=h\\nu",
+    "\\text{(3)}\\quad \\text{волна и частица}",
+    "\\text{(4)}\\quad \\text{дуализм}",
+    "\\text{(5)}\\quad \\text{микромир}"
+  ],
+  "schrodinger": [
+    "\\text{(1)}\\quad i\\hbar\\frac{\\partial\\psi}{\\partial t}=\\hat{H}\\psi",
+    "\\text{(2)}\\quad \\hat{H}=-\\frac{\\hbar^2}{2m}\\nabla^2+V",
+    "\\text{(3)}\\quad \\psi(x,t)",
+    "\\text{(4)}\\quad \\text{эволюция}",
+    "\\text{(5)}\\quad \\text{квантовая динамика}"
+  ],
+  "wave_function": [
+    "\\text{(1)}\\quad \\psi=\\psi(x,t)",
+    "\\text{(2)}\\quad P(x,t)=|\\psi(x,t)|^2",
+    "\\text{(3)}\\quad \\int |\\psi|^2\\,dx=1",
+    "\\text{(4)}\\quad \\psi\\in \\mathbb{C}",
+    "\\text{(5)}\\quad \\text{состояние системы}"
+  ],
+  "hilbert_space": [
+    "\\text{(1)}\\quad |\\psi\\rangle\\in \\mathcal{H}",
+    "\\text{(2)}\\quad \\langle \\phi|\\psi\\rangle",
+    "\\text{(3)}\\quad \\|\\psi\\|^2=\\langle \\psi|\\psi\\rangle",
+    "\\text{(4)}\\quad \\mathcal{H}=\\text{полное линейное пространство}",
+    "\\text{(5)}\\quad \\text{формализм КМ}"
+  ],
+  "atomic_physics": [
+    "\\text{(1)}\\quad E_n=-\\frac{13.6}{n^2}\\,\\text{эВ}",
+    "\\text{(2)}\\quad \\Delta E=h\\nu",
+    "\\text{(3)}\\quad H\\psi=E\\psi",
+    "\\text{(4)}\\quad \\text{дискретные уровни}",
+    "\\text{(5)}\\quad \\text{спектры атомов}"
+  ],
+  "bohr_model": [
+    "\\text{(1)}\\quad mvr=n\\hbar",
+    "\\text{(2)}\\quad E_n=-\\frac{13.6}{n^2}",
+    "\\text{(3)}\\quad r_n=n^2a_0",
+    "\\text{(4)}\\quad \\Delta E=h\\nu",
+    "\\text{(5)}\\quad \\text{атом водорода}"
+  ],
+  "quantum_numbers": [
+    "\\text{(1)}\\quad n=1,2,3,\\dots",
+    "\\text{(2)}\\quad l=0,1,\\dots,n-1",
+    "\\text{(3)}\\quad m=-l,\\dots,l",
+    "\\text{(4)}\\quad s=\\pm\\frac{1}{2}",
+    "\\text{(5)}\\quad \\text{классификация состояний}"
+  ],
+  "electron_spin": [
+    "\\text{(1)}\\quad s=\\frac{1}{2}",
+    "\\text{(2)}\\quad |s_z|=\\frac{\\hbar}{2}",
+    "\\text{(3)}\\quad \\vec{\\mu}=g\\frac{e}{2m}\\vec{S}",
+    "\\text{(4)}\\quad g\\approx2",
+    "\\text{(5)}\\quad \\text{внутренний момент}"
+  ],
+  "pauli": [
+    "\\text{(1)}\\quad \\psi(x_1,x_2)=-\\psi(x_2,x_1)",
+    "\\text{(2)}\\quad \\text{фермионы}",
+    "\\text{(3)}\\quad n_i\\le1",
+    "\\text{(4)}\\quad \\text{антисимметрия}",
+    "\\text{(5)}\\quad \\text{устойчивость вещества}"
+  ],
+  "quantum_effects": [
+    "\\text{(1)}\\quad E_n\\neq \\text{непрерывно}",
+    "\\text{(2)}\\quad \\lambda=\\frac{h}{p}",
+    "\\text{(3)}\\quad P=|\\psi|^2",
+    "\\text{(4)}\\quad \\text{вероятностность}",
+    "\\text{(5)}\\quad \\text{неклассичность}"
+  ],
+  "tunneling": [
+    "\\text{(1)}\\quad T\\neq0 \\text{ при } E<V",
+    "\\text{(2)}\\quad \\psi\\sim e^{-\\kappa x}",
+    "\\text{(3)}\\quad \\kappa=\\sqrt{\\frac{2m(V-E)}{\\hbar^2}}",
+    "\\text{(4)}\\quad \\text{проникновение}",
+    "\\text{(5)}\\quad \\text{волновая природа}"
+  ],
+  "entanglement": [
+    "\\text{(1)}\\quad |\\psi\\rangle\\neq|\\psi_1\\rangle|\\psi_2\\rangle",
+    "\\text{(2)}\\quad |\\psi\\rangle=\\frac{|00\\rangle+|11\\rangle}{\\sqrt{2}}",
+    "\\text{(3)}\\quad \\rho\\neq\\rho_1\\otimes\\rho_2",
+    "\\text{(4)}\\quad \\text{нелокальные корреляции}",
+    "\\text{(5)}\\quad \\text{квантовая информация}"
+  ],
+  "superposition": [
+    "\\text{(1)}\\quad |\\psi\\rangle=c_1|1\\rangle+c_2|2\\rangle",
+    "\\text{(2)}\\quad |c_1|^2+|c_2|^2=1",
+    "\\text{(3)}\\quad \\text{линейность}",
+    "\\text{(4)}\\quad \\text{интерференция}",
+    "\\text{(5)}\\quad \\text{измерение}"
+  ],
+  "aharonov_bohm": [
+    "\\text{(1)}\\quad \\Delta\\phi=\\frac{q}{\\hbar}\\oint \\vec{A}\\cdot d\\vec{l}",
+    "\\text{(2)}\\quad \\vec{B}=0",
+    "\\text{(3)}\\quad \\vec{A}\\neq0",
+    "\\text{(4)}\\quad \\text{фаза волновой функции}",
+    "\\text{(5)}\\quad \\text{реальность потенциалов}"
+  ],
+  "qft": [
+    "\\text{(1)}\\quad \\phi=\\phi(x,t)",
+    "\\text{(2)}\\quad [\\phi,\\pi]=i\\hbar",
+    "\\text{(3)}\\quad \\text{квантование поля}",
+    "\\text{(4)}\\quad \\text{частицы как кванты}",
+    "\\text{(5)}\\quad \\text{релятивизм}"
+  ],
+  "qed": [
+    "\\text{(1)}\\quad \\mathcal{L}=\\bar\\psi(i\\gamma^\\mu D_\\mu-m)\\psi",
+    "\\text{(2)}\\quad D_\\mu=\\partial_\\mu+ieA_\\mu",
+    "\\text{(3)}\\quad \\gamma^\\mu",
+    "\\text{(4)}\\quad \\text{фотон}",
+    "\\text{(5)}\\quad \\text{электромагнетизм}"
+  ],
+  "qcd": [
+    "\\text{(1)}\\quad SU(3)",
+    "\\text{(2)}\\quad g_s",
+    "\\text{(3)}\\quad \\text{глюоны}",
+    "\\text{(4)}\\quad \\text{конфайнмент}",
+    "\\text{(5)}\\quad \\text{асимптотическая свобода}"
+  ],
+  "standard_model": [
+    "\\text{(1)}\\quad SU(3)\\times SU(2)\\times U(1)",
+    "\\text{(2)}\\quad \\text{кварки и лептоны}",
+    "\\text{(3)}\\quad \\text{калибровочные поля}",
+    "\\text{(4)}\\quad \\text{Хиггс}",
+    "\\text{(5)}\\quad \\text{фундаментальные силы}"
+  ],
+  "higgs": [
+    "\\text{(1)}\\quad V(\\phi)=\\lambda(|\\phi|^2-v^2)^2",
+    "\\text{(2)}\\quad m\\propto v",
+    "\\text{(3)}\\quad \\langle \\phi \\rangle\\neq0",
+    "\\text{(4)}\\quad \\text{нарушение симметрии}",
+    "\\text{(5)}\\quad \\text{массы частиц}"
+  ],
+  "quantum_apps": [
+    "\\text{(1)}\\quad |\\psi\\rangle",
+    "\\text{(2)}\\quad \\text{когерентность}",
+    "\\text{(3)}\\quad \\text{запутанность}",
+    "\\text{(4)}\\quad \\text{управление состояниями}",
+    "\\text{(5)}\\quad \\text{технологии}"
+  ],
+  "quantum_computing": [
+    "\\text{(1)}\\quad |\\psi\\rangle=\\alpha|0\\rangle+\\beta|1\\rangle",
+    "\\text{(2)}\\quad |\\alpha|^2+|\\beta|^2=1",
+    "\\text{(3)}\\quad U|\\psi\\rangle",
+    "\\text{(4)}\\quad \\text{кубиты}",
+    "\\text{(5)}\\quad \\text{алгоритмы}"
+  ],
+  "quantum_crypto": [
+    "\\text{(1)}\\quad \\text{no-cloning}",
+    "\\text{(2)}\\quad \\Delta x\\Delta p\\ge\\frac{\\hbar}{2}",
+    "\\text{(3)}\\quad \\text{измерение разрушает}",
+    "\\text{(4)}\\quad \\text{ключ}",
+    "\\text{(5)}\\quad \\text{безопасность}"
+  ],
+  "quantum_sensors": [
+    "\\text{(1)}\\quad \\Delta\\phi\\sim\\frac{1}{N}",
+    "\\text{(2)}\\quad \\text{квантовый предел}",
+    "\\text{(3)}\\quad \\text{когерентность}",
+    "\\text{(4)}\\quad \\text{высокая точность}",
+    "\\text{(5)}\\quad \\text{метрология}"
+  ],
+  "dirac_equation": [
+    "\\text{(1)}\\quad (i\\gamma^\\mu\\partial_\\mu-m)\\psi=0",
+    "\\text{(2)}\\quad \\gamma^\\mu",
+    "\\text{(3)}\\quad E^2=p^2c^2+m^2c^4",
+    "\\text{(4)}\\quad \\text{античастицы}",
+    "\\text{(5)}\\quad \\text{релятивизм}"
+  ],
+  "quantum_thermo": [
+    "\\text{(1)}\\quad \\rho",
+    "\\text{(2)}\\quad S=-k\\text{Tr}(\\rho\\ln\\rho)",
+    "\\text{(3)}\\quad Q,W",
+    "\\text{(4)}\\quad \\text{информация}",
+    "\\text{(5)}\\quad \\text{малые системы}"
+  ],
+  "quantum_optics": [
+    "\\text{(1)}\\quad \\hat{a},\\hat{a}^\\dagger",
+    "\\text{(2)}\\quad |n\\rangle",
+    "\\text{(3)}\\quad \\Delta n\\Delta\\phi",
+    "\\text{(4)}\\quad \\text{фотоны}",
+    "\\text{(5)}\\quad \\text{неклассический свет}"
+  ],
+  "particle_physics": [
+    "\\text{(1)}\\quad \\text{кварки}",
+    "\\text{(2)}\\quad \\text{лептоны}",
+    "\\text{(3)}\\quad \\text{калибровочные бозоны}",
+    "\\text{(4)}\\quad \\text{взаимодействия}",
+    "\\text{(5)}\\quad \\text{микромир}"
+  ],
+  "quantum_coherence": [
+    "\\text{(1)}\\quad \\rho_{ij}\\neq0",
+    "\\text{(2)}\\quad \\text{фазовые связи}",
+    "\\text{(3)}\\quad \\text{интерференция}",
+    "\\text{(4)}\\quad \\text{декогеренция}",
+    "\\text{(5)}\\quad \\text{ресурс}"
+  ],
+  "quantum_chaos": [
+    "\\text{(1)}\\quad [H,\\text{хаос}]",
+    "\\text{(2)}\\quad \\text{классический предел}",
+    "\\text{(3)}\\quad \\text{спектры}",
+    "\\text{(4)}\\quad \\text{нелинейность}",
+    "\\text{(5)}\\quad \\text{динамика}"
+  ],
+  "quantum_fluids": [
+    "\\text{(1)}\\quad \\psi=\\sqrt{n}e^{i\\phi}",
+    "\\text{(2)}\\quad \\nabla\\times\\vec{v}=0",
+    "\\text{(3)}\\quad \\text{сверхтекучесть}",
+    "\\text{(4)}\\quad \\text{БЭК}",
+    "\\text{(5)}\\quad \\text{макроквант}"
+  ],
+  "quantum_algorithms": [
+    "\\text{(1)}\\quad U_f|x\\rangle|y\\rangle",
+    "\\text{(2)}\\quad \\text{параллелизм}",
+    "\\text{(3)}\\quad \\text{интерференция}",
+    "\\text{(4)}\\quad \\text{ускорение}",
+    "\\text{(5)}\\quad \\text{вычисления}"
+  ],
+  "topological_insulators": [
+    "\\text{(1)}\\quad \\text{gap bulk}",
+    "\\text{(2)}\\quad \\text{edge states}",
+    "\\text{(3)}\\quad C\\neq0",
+    "\\text{(4)}\\quad \\text{топология}",
+    "\\text{(5)}\\quad \\text{защита состояний}"
+  ],
+  "feynman_path": [
+    "\\text{(1)}\\quad K=\\sum e^{iS/\\hbar}",
+    "\\text{(2)}\\quad S=\\int L dt",
+    "\\text{(3)}\\quad \\text{все траектории}",
+    "\\text{(4)}\\quad \\text{амплитуды}",
+    "\\text{(5)}\\quad \\text{вероятности}"
+  ],
+  "atomic_structure": [
+    "\\text{(1)}\\quad H=H_0+V",
+    "\\text{(2)}\\quad E_n",
+    "\\text{(3)}\\quad \\text{оболочки}",
+    "\\text{(4)}\\quad \\text{ядро}",
+    "\\text{(5)}\\quad \\text{квантовое строение}"
+  ],
+  "quantum_moments": [
+    "\\text{(1)}\\quad \\vec{L},\\vec{S}",
+    "\\text{(2)}\\quad \\vec{J}=\\vec{L}+\\vec{S}",
+    "\\text{(3)}\\quad \\mu\\propto J",
+    "\\text{(4)}\\quad \\text{квантование}",
+    "\\text{(5)}\\quad \\text{магнетизм}"
+  ],
+  "orbital_moment": [
+    "\\text{(1)}\\quad L^2=l(l+1)\\hbar^2",
+    "\\text{(2)}\\quad L_z=m\\hbar",
+    "\\text{(3)}\\quad l=0,1,2,\\dots",
+    "\\text{(4)}\\quad \\text{орбитали}",
+    "\\text{(5)}\\quad \\text{угловой момент}"
+  ],
+  "spin_moment": [
+    "\\text{(1)}\\quad S^2=s(s+1)\\hbar^2",
+    "\\text{(2)}\\quad S_z=\\pm\\frac{\\hbar}{2}",
+    "\\text{(3)}\\quad \\text{внутреннее свойство}",
+    "\\text{(4)}\\quad \\text{фермионы}",
+    "\\text{(5)}\\quad \\text{квантовый момент}"
+  ],
+  "photon_properties": [
+    "\\text{(1)}\\quad E=h\\nu",
+    "\\text{(2)}\\quad p=\\frac{h}{\\lambda}",
+    "\\text{(3)}\\quad s=1",
+    "\\text{(4)}\\quad m=0",
+    "\\text{(5)}\\quad \\text{квант света}"
+  ],
+  "photon_energy": [
+    "\\text{(1)}\\quad E=h\\nu",
+    "\\text{(2)}\\quad E=\\hbar\\omega",
+    "\\text{(3)}\\quad \\nu=\\frac{c}{\\lambda}",
+    "\\text{(4)}\\quad \\text{квант излучения}",
+    "\\text{(5)}\\quad \\text{обмен энергией}"
+  ],
+  "compton_wavelength": [
+    "\\text{(1)}\\quad \\lambda_C=\\frac{h}{mc}",
+    "\\text{(2)}\\quad \\lambda_C=\\frac{\\hbar}{mc}\\,2\\pi",
+    "\\text{(3)}\\quad m\\uparrow \\Rightarrow \\lambda_C\\downarrow",
+    "\\text{(4)}\\quad \\text{релятивистский масштаб}",
+    "\\text{(5)}\\quad \\text{квантовое рассеяние}"
+  ],
+  "planck_formula": [
+    "\\text{(1)}\\quad u(\\nu,T)=\\frac{8\\pi h\\nu^3}{c^3}\\frac{1}{e^{h\\nu/kT}-1}",
+    "\\text{(2)}\\quad E=h\\nu",
+    "\\text{(3)}\\quad \\nu\\to0",
+    "\\text{(4)}\\quad \\text{чёрное тело}",
+    "\\text{(5)}\\quad \\text{начало квантовой теории}"
+  ],
+  "special": [
+    "\\text{(1)}\\quad c=\\text{const}",
+    "\\text{(2)}\\quad ds^2=c^2dt^2-dx^2-dy^2-dz^2",
+    "\\text{(3)}\\quad \\text{инерциальные СО}",
+    "\\text{(4)}\\quad \\text{относительность времени}",
+    "\\text{(5)}\\quad \\text{пространство-время}"
+  ],
+  "postulates": [
+    "\\text{(1)}\\quad \\text{все ИСО эквивалентны}",
+    "\\text{(2)}\\quad c=\\text{const}",
+    "\\text{(3)}\\quad \\text{независимо от источника}",
+    "\\text{(4)}\\quad \\text{независимо от наблюдателя}",
+    "\\text{(5)}\\quad \\text{основа СТО}"
+  ],
+  "effects": [
+    "\\text{(1)}\\quad \\gamma=\\frac{1}{\\sqrt{1-v^2/c^2}}",
+    "\\text{(2)}\\quad \\Delta t=\\gamma\\Delta t_0",
+    "\\text{(3)}\\quad L=\\frac{L_0}{\\gamma}",
+    "\\text{(4)}\\quad E=\\gamma mc^2",
+    "\\text{(5)}\\quad \\text{релятивистская динамика}"
+  ],
+  "dilation": [
+    "\\text{(1)}\\quad \\Delta t=\\gamma\\Delta t_0",
+    "\\text{(2)}\\quad \\gamma>1",
+    "\\text{(3)}\\quad v\\to c",
+    "\\text{(4)}\\quad \\text{замедление часов}",
+    "\\text{(5)}\\quad \\text{экспериментально подтверждено}"
+  ],
+  "length_contraction": [
+    "\\text{(1)}\\quad L=\\frac{L_0}{\\gamma}",
+    "\\text{(2)}\\quad v\\parallel L",
+    "\\text{(3)}\\quad \\gamma>1",
+    "\\text{(4)}\\quad \\text{не поперёк движения}",
+    "\\text{(5)}\\quad \\text{эффект СТО}"
+  ],
+  "energy_momentum": [
+    "\\text{(1)}\\quad E^2=p^2c^2+m^2c^4",
+    "\\text{(2)}\\quad E=\\gamma mc^2",
+    "\\text{(3)}\\quad \\vec{p}=\\gamma m\\vec{v}",
+    "\\text{(4)}\\quad m=0",
+    "\\text{(5)}\\quad \\text{единая формула}"
+  ],
+  "general": [
+    "\\text{(1)}\\quad g_{\\mu\\nu}",
+    "\\text{(2)}\\quad ds^2=g_{\\mu\\nu}dx^\\mu dx^\\nu",
+    "\\text{(3)}\\quad \\text{геометрия}",
+    "\\text{(4)}\\quad \\text{гравитация}",
+    "\\text{(5)}\\quad \\text{искривление П-В}"
+  ],
+  "equivalence": [
+    "\\text{(1)}\\quad m_g=m_i",
+    "\\text{(2)}\\quad \\text{локально неразличимо}",
+    "\\text{(3)}\\quad a=g",
+    "\\text{(4)}\\quad \\text{гравитация = инерция}",
+    "\\text{(5)}\\quad \\text{основа ОТО}"
+  ],
+  "einstein_eq": [
+    "\\text{(1)}\\quad G_{\\mu\\nu}=\\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+    "\\text{(2)}\\quad G_{\\mu\\nu}",
+    "\\text{(3)}\\quad T_{\\mu\\nu}",
+    "\\text{(4)}\\quad \\text{геометрия ↔ материя}",
+    "\\text{(5)}\\quad \\text{уравнения поля}"
+  ],
+  "black_holes": [
+    "\\text{(1)}\\quad r_s=\\frac{2GM}{c^2}",
+    "\\text{(2)}\\quad v_{esc}=c",
+    "\\text{(3)}\\quad \\text{горизонт событий}",
+    "\\text{(4)}\\quad \\text{сингулярность}",
+    "\\text{(5)}\\quad \\text{ОТО-объект}"
+  ],
+  "grav_waves": [
+    "\\text{(1)}\\quad h\\sim10^{-21}",
+    "\\text{(2)}\\quad \\Box h_{\\mu\\nu}=0",
+    "\\text{(3)}\\quad c",
+    "\\text{(4)}\\quad \\text{излучение масс}",
+    "\\text{(5)}\\quad \\text{детекция LIGO}"
+  ],
+  "cosmology": [
+    "\\text{(1)}\\quad a(t)",
+    "\\text{(2)}\\quad H=\\frac{\\dot a}{a}",
+    "\\text{(3)}\\quad \\Omega",
+    "\\text{(4)}\\quad \\text{расширение}",
+    "\\text{(5)}\\quad \\text{Вселенная}"
+  ],
+  "dark_matter": [
+    "\\text{(1)}\\quad v(r)=\\text{const}",
+    "\\text{(2)}\\quad M_{\\text{набл}}<M_{\\text{грав}}",
+    "\\text{(3)}\\quad \\text{не светится}",
+    "\\text{(4)}\\quad \\text{гравитация}",
+    "\\text{(5)}\\quad \\text{космология}"
+  ],
+  "dark_energy": [
+    "\\text{(1)}\\quad \\Lambda",
+    "\\text{(2)}\\quad p=-\\rho c^2",
+    "\\text{(3)}\\quad \\ddot a>0",
+    "\\text{(4)}\\quad \\text{ускорение}",
+    "\\text{(5)}\\quad \\text{космологическая константа}"
+  ],
+  "universe_evolution": [
+    "\\text{(1)}\\quad a(t)",
+    "\\text{(2)}\\quad \\dot a>0",
+    "\\text{(3)}\\quad \\ddot a",
+    "\\text{(4)}\\quad \\text{Большой взрыв}",
+    "\\text{(5)}\\quad \\text{структуры}"
+  ],
+  "cosmic_rays": [
+    "\\text{(1)}\\quad E>10^{20}\\,\\text{эВ}",
+    "\\text{(2)}\\quad p,\\alpha,\\text{ядра}",
+    "\\text{(3)}\\quad \\text{внеземные}",
+    "\\text{(4)}\\quad \\text{атмосфера}",
+    "\\text{(5)}\\quad \\text{астрофизика}"
+  ],
+  "gps_systems": [
+    "\\text{(1)}\\quad \\Delta t_{\\text{СТО}}",
+    "\\text{(2)}\\quad \\Delta t_{\\text{ОТО}}",
+    "\\text{(3)}\\quad \\text{атомные часы}",
+    "\\text{(4)}\\quad \\text{релятивистские поправки}",
+    "\\text{(5)}\\quad \\text{навигация}"
+  ],
+  "lorenz": [
+    "\\text{(1)}\\quad x'=\\gamma(x-vt)",
+    "\\text{(2)}\\quad t'=\\gamma(t-vx/c^2)",
+    "\\text{(3)}\\quad y'=y",
+    "\\text{(4)}\\quad z'=z",
+    "\\text{(5)}\\quad \\text{преобразования СТО}"
+  ],
+  "holographic_principle": [
+    "\\text{(1)}\\quad S\\propto A",
+    "\\text{(2)}\\quad A=\\text{граница}",
+    "\\text{(3)}\\quad V\\to \\partial V",
+    "\\text{(4)}\\quad \\text{информация}",
+    "\\text{(5)}\\quad \\text{квантовая гравитация}"
+  ],
+  "quantum_tech": [
+    "\\text{(1)}\\quad |\\psi\\rangle",
+    "\\text{(2)}\\quad \\text{когерентность}",
+    "\\text{(3)}\\quad \\text{контроль}",
+    "\\text{(4)}\\quad \\text{измерения}",
+    "\\text{(5)}\\quad \\text{технологии}"
+  ],
+  "quantum_information": [
+    "\\text{(1)}\\quad |\\psi\\rangle",
+    "\\text{(2)}\\quad S=-\\text{Tr}\\rho\\ln\\rho",
+    "\\text{(3)}\\quad \\text{запутанность}",
+    "\\text{(4)}\\quad \\text{передача}",
+    "\\text{(5)}\\quad \\text{обработка}"
+  ],
+  "quantum_simulators": [
+    "\\text{(1)}\\quad H_{\\text{model}}",
+    "\\text{(2)}\\quad H_{\\text{real}}",
+    "\\text{(3)}\\quad H_{\\text{model}}\\approx H_{\\text{real}}",
+    "\\text{(4)}\\quad \\text{аналогия}",
+    "\\text{(5)}\\quad \\text{моделирование}"
+  ],
+  "quantum_gravity": [
+    "\\text{(1)}\\quad l_P=\\sqrt{\\frac{\\hbar G}{c^3}}",
+    "\\text{(2)}\\quad E_P",
+    "\\text{(3)}\\quad \\text{квант П-В}",
+    "\\text{(4)}\\quad \\text{предел применимости}",
+    "\\text{(5)}\\quad \\text{открытая проблема}"
+  ],
+  "string_theory": [
+    "\\text{(1)}\\quad l_s",
+    "\\text{(2)}\\quad \\text{колебания}",
+    "\\text{(3)}\\quad d>4",
+    "\\text{(4)}\\quad \\text{гравитон}",
+    "\\text{(5)}\\quad \\text{унификация}"
+  ],
+  "loop_gravity": [
+    "\\text{(1)}\\quad A\\sim l_P^2",
+    "\\text{(2)}\\quad \\text{квант геометрии}",
+    "\\text{(3)}\\quad \\text{петли}",
+    "\\text{(4)}\\quad \\text{дискретность}",
+    "\\text{(5)}\\quad \\text{ОТО → квант}"
+  ],
+  "beyond_standard": [
+    "\\text{(1)}\\quad m_\\nu\\neq0",
+    "\\text{(2)}\\quad \\text{DM}",
+    "\\text{(3)}\\quad \\text{иерархия}",
+    "\\text{(4)}\\quad \\text{новые симметрии}",
+    "\\text{(5)}\\quad \\text{расширения}"
+  ],
+  "neutrino": [
+    "\\text{(1)}\\quad \\nu_e,\\nu_\\mu,\\nu_\\tau",
+    "\\text{(2)}\\quad \\Delta m^2\\neq0",
+    "\\text{(3)}\\quad \\text{осцилляции}",
+    "\\text{(4)}\\quad \\text{слабые взаимодействия}",
+    "\\text{(5)}\\quad \\text{за СМ}"
+  ],
+  "multiverse": [
+    "\\text{(1)}\\quad \\{\\mathcal U_i\\}",
+    "\\text{(2)}\\quad \\text{разные константы}",
+    "\\text{(3)}\\quad \\text{инфляция}",
+    "\\text{(4)}\\quad \\text{антропный подход}",
+    "\\text{(5)}\\quad \\text{гипотеза}"
+  ],
+  "medical_physics": [
+    "\\text{(1)}\\quad D=\\frac{E}{m}",
+    "\\text{(2)}\\quad \\text{Гр}",
+    "\\text{(3)}\\quad \\text{излучение}",
+    "\\text{(4)}\\quad \\text{диагностика}",
+    "\\text{(5)}\\quad \\text{терапия}"
+  ],
+  "mri_technology": [
+    "\\text{(1)}\\quad \\omega=\\gamma B",
+    "\\text{(2)}\\quad \\mu\\cdot B",
+    "\\text{(3)}\\quad \\text{ЯМР}",
+    "\\text{(4)}\\quad \\text{резонанс}",
+    "\\text{(5)}\\quad \\text{визуализация}"
+  ],
+  "neurophysics": [
+    "\\text{(1)}\\quad V_m(t)",
+    "\\text{(2)}\\quad I=C\\frac{dV}{dt}",
+    "\\text{(3)}\\quad \\text{нейроны}",
+    "\\text{(4)}\\quad \\text{сигналы}",
+    "\\text{(5)}\\quad \\text{динамика}"
+  ],
+  "tech_control": [
+    "\\text{(1)}\\quad R=P\\cdot D",
+    "\\text{(2)}\\quad \\text{риск}",
+    "\\text{(3)}\\quad \\text{безопасность}",
+    "\\text{(4)}\\quad \\text{этика}",
+    "\\text{(5)}\\quad \\text{ответственность}"
+  ],
+  "solar_cells": [
+    "\\text{(1)}\\quad E_g",
+    "\\text{(2)}\\quad h\\nu>E_g",
+    "\\text{(3)}\\quad e^-h^+",
+    "\\text{(4)}\\quad \\text{p-n переход}",
+    "\\text{(5)}\\quad \\text{фотоэффект}"
+  ],
+  "fusion": [
+    "\\text{(1)}\\quad E=\\Delta mc^2",
+    "\\text{(2)}\\quad T>10^7\\,K",
+    "\\text{(3)}\\quad D+T",
+    "\\text{(4)}\\quad \\text{звёзды}",
+    "\\text{(5)}\\quad \\text{энергия}"
+  ],
+  "superconductivity": [
+    "\\text{(1)}\\quad R=0",
+    "\\text{(2)}\\quad B=0",
+    "\\text{(3)}\\quad T < T_{c}",
+    "\\text{(4)}\\quad \\text{эффект Мейснера}",
+    "\\text{(5)}\\quad \\text{БКШ}"
+  ],
+  "semiconductors": [
+    "\\text{(1)}\\quad E_g",
+    "\\text{(2)}\\quad n,p",
+    "\\text{(3)}\\quad \\text{легирование}",
+    "\\text{(4)}\\quad \\text{зонная структура}",
+    "\\text{(5)}\\quad \\text{электроника}"
+  ],
+  "neutron_stars": [
+    "\\text{(1)}\\quad \\rho>10^{17}",
+    "\\text{(2)}\\quad R\\sim10\\,km",
+    "\\text{(3)}\\quad B\\gg B_{\\text{Земли}}",
+    "\\text{(4)}\\quad \\text{коллапс}",
+    "\\text{(5)}\\quad \\text{экстремальная физика}"
+  ],
+  "particle_accelerators": [
+    "\\text{(1)}\\quad E=pc",
+    "\\text{(2)}\\quad \\text{пучки}",
+    "\\text{(3)}\\quad \\text{коллайдеры}",
+    "\\text{(4)}\\quad \\text{эксперименты}",
+    "\\text{(5)}\\quad \\text{физика частиц}"
+  ],
+  "accelerators": [
+    "\\text{(1)}\\quad L\\uparrow",
+    "\\text{(2)}\\quad E\\uparrow",
+    "\\text{(3)}\\quad \\text{компактность}",
+    "\\text{(4)}\\quad \\text{плазменные}",
+    "\\text{(5)}\\quad \\text{новые технологии}"
+  ],
+  "quantum_biology": [
+    "\\text{(1)}\\quad \\text{когерентность}",
+    "\\text{(2)}\\quad \\text{туннелирование}",
+    "\\text{(3)}\\quad \\text{биомолекулы}",
+    "\\text{(4)}\\quad \\text{эффективность}",
+    "\\text{(5)}\\quad \\text{гипотеза}"
+  ],
+  "photosynthesis": [
+    "\\text{(1)}\\quad E_{\\text{exc}}",
+    "\\text{(2)}\\quad \\text{когерентный перенос}",
+    "\\text{(3)}\\quad \\text{хлорофилл}",
+    "\\text{(4)}\\quad \\text{кванты света}",
+    "\\text{(5)}\\quad \\text{энергия}"
+  ],
+  "magnetic_sense": [
+    "\\text{(1)}\\quad \\text{радикальные пары}",
+    "\\text{(2)}\\quad B_{\\text{Земли}}",
+    "\\text{(3)}\\quad \\text{квантовые спины}",
+    "\\text{(4)}\\quad \\text{ориентация}",
+    "\\text{(5)}\\quad \\text{биофизика}"
+  ],
+  "ai_physics": [
+    "\\text{(1)}\\quad \\text{ML}",
+    "\\text{(2)}\\quad \\text{big data}",
+    "\\text{(3)}\\quad \\text{оптимизация}",
+    "\\text{(4)}\\quad \\text{поиск закономерностей}",
+    "\\text{(5)}\\quad \\text{моделирование}"
+  ],
+  "chaos_theory": [
+    "\\text{(1)}\\quad \\delta x_0\\to \\delta x(t)",
+    "\\text{(2)}\\quad \\lambda>0",
+    "\\text{(3)}\\quad \\text{детерминизм}",
+    "\\text{(4)}\\quad \\text{чувствительность}",
+    "\\text{(5)}\\quad \\text{нелинейность}"
+  ],
+  "scientific_status": [
+    "\\text{(1)}\\quad \\text{фальсифицируемость}",
+    "\\text{(2)}\\quad \\text{воспроизводимость}",
+    "\\text{(3)}\\quad \\text{модели}",
+    "\\text{(4)}\\quad \\text{границы теорий}",
+    "\\text{(5)}\\quad \\text{философия науки}"
+  ],
+  "measurement_problem": [
+    "\\text{(1)}\\quad |\\psi\\rangle\\to |\\phi_i\\rangle",
+    "\\text{(2)}\\quad P_i=|c_i|^2",
+    "\\text{(3)}\\quad \\text{редукция}",
+    "\\text{(4)}\\quad \\text{наблюдатель}",
+    "\\text{(5)}\\quad \\text{интерпретации}"
+  ],
+  "time_nature": [
+    "\\text{(1)}\\quad t",
+    "\\text{(2)}\\quad \\text{параметр}",
+    "\\text{(3)}\\quad \\text{симметрия}",
+    "\\text{(4)}\\quad \\text{энтропия}",
+    "\\text{(5)}\\quad \\text{фундаментальный вопрос}"
+  ],
+  "consciousness": [
+    "\\text{(1)}\\quad \\text{субъективность}",
+    "\\text{(2)}\\quad \\text{физические процессы}",
+    "\\text{(3)}\\quad \\text{редукция}",
+    "\\text{(4)}\\quad \\text{границы науки}",
+    "\\text{(5)}\\quad \\text{философия}"
+  ],
+  "hierarchy": [
+    "\\text{(1)}\\quad m_{\\text{Planck}}\\gg m_{\\text{Higgs}}",
+    "\\text{(2)}\\quad \\text{масштабы}",
+    "\\text{(3)}\\quad \\text{тонкая настройка}",
+    "\\text{(4)}\\quad \\text{новая физика}",
+    "\\text{(5)}\\quad \\text{проблема}"
+  ],
+  "anthropic": [
+    "\\text{(1)}\\quad \\text{наблюдатель}",
+    "\\text{(2)}\\quad \\text{константы}",
+    "\\text{(3)}\\quad \\text{отбор}",
+    "\\text{(4)}\\quad \\text{космология}",
+    "\\text{(5)}\\quad \\text{методология}"
+  ],
+  "time_arrow": [
+    "\\text{(1)}\\quad \\Delta S>0",
+    "\\text{(2)}\\quad \\text{необратимость}",
+    "\\text{(3)}\\quad \\text{энтропия}",
+    "\\text{(4)}\\quad \\text{космология}",
+    "\\text{(5)}\\quad \\text{направление времени}"
+  ],
+  "wave_collapse": [
+    "\\text{(1)}\\quad |\\psi\\rangle=\\sum c_i|i\\rangle",
+    "\\text{(2)}\\quad |\\psi\\rangle\\to|i\\rangle",
+    "\\text{(3)}\\quad P_i=|c_i|^2",
+    "\\text{(4)}\\quad \\text{измерение}",
+    "\\text{(5)}\\quad \\text{гипотеза}"
+  ],
+  "spacetime_discrete": [
+    "\\text{(1)}\\quad l\\sim l_P",
+    "\\text{(2)}\\quad t\\sim t_P",
+    "\\text{(3)}\\quad \\text{кванты геометрии}",
+    "\\text{(4)}\\quad \\text{непрерывность нарушается}",
+    "\\text{(5)}\\quad \\text{квантовая гравитация}"
+  ],
+  "local_realism": [
+    "\\text{(1)}\\quad \\text{локальность}",
+    "\\text{(2)}\\quad \\text{реализм}",
+    "\\text{(3)}\\quad \\text{неравенства Белла}",
+    "\\text{(4)}\\quad \\text{эксперименты}",
+    "\\text{(5)}\\quad \\text{квантовая нелокальность}"
+  ],
+  "crisis_cosmology": [
+    "\\text{(1)}\\quad H_0^{(1)}\\neq H_0^{(2)}",
+    "\\text{(2)}\\quad \\text{напряжение Хаббла}",
+    "\\text{(3)}\\quad \\text{наблюдения}",
+    "\\text{(4)}\\quad \\text{модель ΛCDM}",
+    "\\text{(5)}\\quad \\text{современная проблема}"
+  ],
+  "quantum_mind": [
+    "\\text{(1)}\\quad \\text{гипотеза}",
+    "\\text{(2)}\\quad \\text{квантовые процессы}",
+    "\\text{(3)}\\quad \\text{сознание}",
+    "\\text{(4)}\\quad \\text{спекуляции}",
+    "\\text{(5)}\\quad \\text{дискуссия}"
+  ],
+  "mass_defect": [
+    "\\text{(1)}\\quad \\Delta m=\\sum m_i-m_{\\text{ядра}}",
+    "\\text{(2)}\\quad E=\\Delta mc^2",
+    "\\text{(3)}\\quad \\text{энергия связи}",
+    "\\text{(4)}\\quad \\text{ядерная физика}",
+    "\\text{(5)}\\quad \\text{стабильность}"
+  ],
+  "proton_mass_future": [
+    "\\text{(1)}\\quad m_p\\neq \\sum m_q",
+    "\\text{(2)}\\quad \\text{глюонная динамика}",
+    "\\text{(3)}\\quad \\text{QCD}",
+    "\\text{(4)}\\quad \\text{масса из энергии}",
+    "\\text{(5)}\\quad \\text{активные исследования}"
+  ],
+  "decay_law": [
+    "\\text{(1)}\\quad N(t)=N_0e^{-\\lambda t}",
+    "\\text{(2)}\\quad \\frac{dN}{dt}=-\\lambda N",
+    "\\text{(3)}\\quad T_{1/2}=\\frac{\\ln2}{\\lambda}",
+    "\\text{(4)}\\quad \\text{вероятностный процесс}",
+    "\\text{(5)}\\quad \\text{радиоактивность}"
+  ],
+  "uncertainty": [
+    "\\text{y(1)}\\quad \\Delta x\\,\\Delta p\\ge \\frac{\\hbar}{2}",
+    "\\text{(2)}\\quad \\Delta E\\,\\Delta t\\ge \\frac{\\hbar}{2}",
+    "\\text{(3)}\\quad \\text{неопределённость}",
+    "\\text{(4)}\\quad \\text{сопряжённые величины}",
+    "\\text{(5)}\\quad \\text{граница измерений}"
+  ],
+  "time_metaphysics": [
+    "\\text{(1)}\\quad t",
+    "\\text{(2)}\\quad t \\text{ — параметр наподобие координаты}",
+    "\\text{(3)}\\quad \\Delta S > 0",
+    "\\text{(4)}\\quad \\text{стрела времени}",
+    "\\text{(5)}\\quad \\text{необратимость}"
+  ],
+  "anthropic_principle": [
+    "\\text{(1)}\\quad \\text{observer selection}",
+    "\\text{(2)}\\quad \\alpha \\approx \\text{const}",
+    "\\text{(3)}\\quad \\text{fine tuning}",
+    "\\text{(4)}\\quad \\text{life} \\Rightarrow \\text{constraints}",
+    "\\text{(5)}\\quad \\text{cosmological parameters}"
+  ],
+  "quantum_philosophy": [
+    "\\text{(1)}\\quad |\\psi\\rangle",
+    "\\text{(2)}\\quad P=|\\psi|^2",
+    "\\text{(3)}\\quad \\text{measurement}",
+    "\\text{(4)}\\quad \\text{interpretation}",
+    "\\text{(5)}\\quad \\text{non-classical logic}"
+  ],
+  "relativity_philosophy": [
+    "\\text{(1)}\\quad c=\\text{const}",
+    "\\text{(2)}\\quad \\Delta t \\neq \\Delta t'",
+    "\\text{(3)}\\quad \\Delta x \\neq \\Delta x'",
+    "\\text{(4)}\\quad \\text{simultaneity relative}",
+    "\\text{(5)}\\quad \\text{spacetime}"
+  ],
+  "proton_mass_origin": [
+    "\\text{(1)}\\quad m_p \\neq \\sum m_q",
+    "\\text{(2)}\\quad E_{\\text{bind}}",
+    "\\text{(3)}\\quad E=mc^2",
+    "\\text{(4)}\\quad \\text{QCD dynamics}",
+    "\\text{(5)}\\quad \\text{mass from energy}"
+  ],
+  "reality_nature": [
+    "\\text{(1)}\\quad R = \\{x \\mid x \\text{ ?????????? ?????????? ?? } S\\}",
+    "\\text{(2)}\\quad O(x) \\Rightarrow x \\in R",
+    "\\text{(3)}\\quad M(x) \\neq x",
+    "\\text{(4)}\\quad \\forall x \\in R: \\exists P(x)",
+    "\\text{(5)}\\quad R \\neq \\text{????????}(R)"
+  ],
+  "mathematical_methods": [
+    "\\text{(1)}\\quad \\frac{d f}{d x} = \\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}",
+    "\\text{(2)}\\quad \\int_{a}^{b} f(x)\\,dx = F(b) - F(a)",
+    "\\text{(3)}\\quad \\mathbf{A}\\mathbf{x} = \\mathbf{b}",
+    "\\text{(4)}\\quad \\nabla f = \\left(\\frac{\\partial f}{\\partial x},\\frac{\\partial f}{\\partial y},\\frac{\\partial f}{\\partial z}\\right)",
+    "\\text{(5)}\\quad f(x) = \\sum_{n=0}^{\\infty} a_n x^n"
+  ],
+  "consciousness_philosophy": [
+    "\\text{(1)}\\quad |\\Psi_{\\text{total}}\\rangle = |\\psi_{\\text{system}}\\rangle \\otimes |O\\rangle",
+    "\\text{(2)}\\quad P(a) = \\langle \\psi | \\hat{P}_a | \\psi \\rangle",
+    "\\text{(3)}\\quad |\\psi\\rangle \\rightarrow \\frac{\\hat{P}_a |\\psi\\rangle}{\\|\\hat{P}_a |\\psi\\rangle\\|}"
+  ],
+  "probability_interpretations": [
+    "\\text{(1)}\\quad P(A) \\in [0,1]",
+    "\\text{(2)}\\quad P(\\Omega) = 1",
+    "\\text{(3)}\\quad P(A \\cup B) = P(A) + P(B), \\; A \\cap B = \\varnothing",
+    "\\text{(4)}\\quad P(A|B) = \\frac{P(A \\cap B)}{P(B)}"
+  ],
+  "field_nature": [
+    "\\text{(1)}\\quad \\mathcal{L} = \\mathcal{L}(\\phi, \\partial_\\mu \\phi)",
+    "\\text{(2)}\\quad \\frac{\\partial \\mathcal{L}}{\\partial \\phi} - \\partial_\\mu \\left(\\frac{\\partial \\mathcal{L}}{\\partial (\\partial_\\mu \\phi)}\\right) = 0",
+    "\\text{(3)}\\quad \\Box \\phi + m^2 \\phi = 0"
+  ],
+  "copenhagen": [
+    "\\text{(1)}\\quad P(a) = |\\psi(a)|^2",
+    "\\text{(2)}\\quad |\\psi\\rangle \\rightarrow \\frac{\\hat{P}_a |\\psi\\rangle}{\\|\\hat{P}_a |\\psi\\rangle\\|}",
+    "\\text{(3)}\\quad \\sum_a P(a) = 1"
+  ],
+  "moment_ratio_relation": [
+    "\\text{(1)}\\quad \\mu = \\gamma J",
+    "\\text{(2)}\\quad \\gamma = \\frac{g q}{2 m}",
+    "\\text{(3)}\\quad \\omega = \\gamma B"
+  ],
+  "gyromagnetic_ratio": [
+    "\\text{(1)}\\quad \\gamma = \\frac{\\mu}{J}",
+    "\\text{(2)}\\quad \\gamma = \\frac{g q}{2 m}",
+    "\\text{(3)}\\quad \\omega = \\gamma B",
+    "\\text{(4)}\\quad \\gamma\\;\\text{(с}^{-1}\\,Т^{-1})",
+    "\\text{(5)}\\quad \\text{ядерное магнитное резонансное отношение}"
+  ],
+  "nuclear_magnetic_moment": [
+    "\\text{(1)}\\quad \\mu = \\gamma J",
+    "\\text{(2)}\\quad \\mu = g\\,\\mu_N\\,\\frac{I}{\\hbar}",
+    "\\text{(3)}\\quad \\mu_N = \\frac{e\\hbar}{2m_p}",
+    "\\text{(4)}\\quad \\text{магнитный момент ядра}",
+    "\\text{(5)}\\quad \\text{ядерная физика}"
+  ],
+  "biot_savart": [
+    "\\text{(1)}\\quad d\\mathbf{B} = \\frac{\\mu_0}{4\\pi} \\frac{I\\, d\\mathbf{\\ell} \\times \\hat{\\mathbf{r}}}{r^2}",
+    "\\text{(2)}\\quad \\mathbf{B} = \\frac{\\mu_0}{4\\pi} \\int \\frac{I\\, d\\mathbf{\\ell} \\times \\hat{\\mathbf{r}}}{r^2}",
+    "\\text{(3)}\\quad B = \\frac{\\mu_0 I}{2\\pi r}"
+  ],
+  "capacitance": [
+    "\\text{(1)}\\quad C=\\frac{q}{U}",
+    "\\text{(2)}\\quad C=\\varepsilon\\,\\varepsilon_0\\,\\frac{S}{d}",
+    "\\text{(3)}\\quad C\\;\\text{(\\u0424)}",
+    "\\text{(4)}\\quad \\text{плоский конденсатор}",
+    "\\text{(5)}\\quad \\text{ёмкость}"
+  ],
+  "ether_theories": [
+    "\\text{(1)}\\quad c' = c \\pm v",
+    "\\text{(2)}\\quad \\Delta t \\approx \\frac{L v^2}{c^3}",
+    "\\text{(3)}\\quad \\Delta \\phi \\propto \\frac{v^2}{c^2}",
+    "\\text{(4)}\\quad \\text{эфирный ветер}",
+    "\\text{(5)}\\quad \\text{интерферометр Майкельсона}"
+  ],
+  "least_action": [
+    "\\text{(1)}\\quad S = \\int L\\,dt",
+    "\\text{(2)}\\quad \\delta S = 0",
+    "\\text{(3)}\\quad L = T - V"
+  ],
+  "kinematics_motion": [
+    "\\text{(1)}\\quad x(t)=x_0+vt",
+    "\\text{(2)}\\quad v=\\frac{dx}{dt}",
+    "\\text{(3)}\\quad a=\\frac{dv}{dt}"
+  ],
+  "kinematics_rotation": [
+    "\\text{(1)}\\quad \\omega=\\frac{d\\varphi}{dt}",
+    "\\text{(2)}\\quad \\alpha=\\frac{d\\omega}{dt}",
+    "\\text{(3)}\\quad v=\\omega r"
+  ],
+  "kinematics_relativity": [
+    "\\text{(1)}\\quad x'=\\gamma(x-vt)",
+    "\\text{(2)}\\quad t'=\\gamma\\left(t-\\frac{vx}{c^2}\\right)",
+    "\\text{(3)}\\quad \\gamma=\\frac{1}{\\sqrt{1-v^2/c^2}}"
+  ],
+  "free_fall": [
+    "\\text{(1)}\\quad y=y_0+v_0 t-\\frac{gt^2}{2}",
+    "\\text{(2)}\\quad v=v_0-gt",
+    "\\text{(3)}\\quad g\\approx 9{,}8\\,\\text{м/с}^2"
+  ],
+  "dynamics": [
+    "\\text{(1)}\\quad \\vec{F}=m\\vec{a}",
+    "\\text{(2)}\\quad \\vec{p}=m\\vec{v}",
+    "\\text{(3)}\\quad \\frac{d\\vec{p}}{dt}=\\vec{F}"
+  ],
+  "light_relations": [
+    "\\text{(1)}\\quad c=\\lambda\\nu",
+    "\\text{(2)}\\quad E=h\\nu",
+    "\\text{(3)}\\quad n=\\frac{c}{v}"
+  ],
+  "brightness_luminosity": [
+    "\\text{(1)}\\quad L=\\frac{I}{S}",
+    "\\text{(2)}\\quad L=\\frac{d^2\\Phi}{dS\\,d\\Omega}",
+    "\\text{(3)}\\quad [L]=\\text{кд/м}^2"
+  ],
+  "nuclear_characteristics": [
+    "\\text{(1)}\\quad R=r_0 A^{1/3}",
+    "\\text{(2)}\\quad A=Z+N",
+    "\\text{(3)}\\quad \\rho\\approx \\text{const}"
+  ],
+  "diffusion_phenomena": [
+    "\\text{(1)}\\quad \\vec{J}=-D\\nabla n",
+    "\\text{(2)}\\quad \\langle x^2 \\rangle = 2Dt",
+    "\\text{(3)}\\quad \\text{диффузионный поток}"
+  ],
+  "diffusion_equation": [
+    "\\text{(1)}\\quad \\frac{\\partial n}{\\partial t}=D\\nabla^2 n",
+    "\\text{(2)}\\quad D=\\text{const}",
+    "\\text{(3)}\\quad \\text{уравнение диффузии}"
+  ],
+  "nuclear_relations": [
+    "\\text{(1)}\\quad A=Z+N",
+    "\\text{(2)}\\quad E=\\Delta mc^2",
+    "\\text{(3)}\\quad \\text{связь массы и энергии}"
+  ],
+  "diffusion_applications": [
+    "\\text{(1)}\\quad t\\sim \\frac{L^2}{D}",
+    "\\text{(2)}\\quad J=-D\\frac{dC}{dx}",
+    "\\text{(3)}\\quad \\text{диффузия в средах}"
+  ],
+  "electric_charge": [
+    "\\text{(1)}\\quad q=ne",
+    "\\text{(2)}\\quad \\sum q=\\text{const}",
+    "\\text{(3)}\\quad [q]=\\text{Кл}"
+  ],
+  "electric_fields": [
+    "\\text{(1)}\\quad \\vec{E}=\\frac{\\vec{F}}{q}",
+    "\\text{(2)}\\quad \\vec{E}=-\\nabla\\varphi",
+    "\\text{(3)}\\quad \\oint \\vec{E}\\cdot d\\vec{S}=\\frac{Q}{\\varepsilon_0}"
+  ],
+  "circuit_laws": [
+    "\\text{(1)}\\quad I=\\frac{U}{R}",
+    "\\text{(2)}\\quad \\sum I=0",
+    "\\text{(3)}\\quad \\sum U=0"
+  ],
+  "philosophy_core": [
+    "\\text{(1)}\\quad K=\\langle S,O,J\\rangle"
+  ],
+  "classical_core": [
+    "\\text{(1)}\\quad \\vec{F}=m\\vec{a}"
+  ],
+  "quantum_core": [
+    "\\text{(1)}\\quad i\\hbar\\frac{\\partial \\psi}{\\partial t}=\\hat{H}\\psi"
+  ],
+  "relativity_core": [
+    "\\text{(1)}\\quad E=mc^2"
+  ],
+  "future_core": [
+    "\\text{(1)}\\quad \\text{поиск новых законов}"
+  ],
+  "unknown_core": [
+    "\\text{(1)}\\quad \\text{?}"
+  ]
+}
