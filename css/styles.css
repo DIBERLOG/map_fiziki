@@ -1561,19 +1561,48 @@ body.is-map-transitioning .custom-zoom {
   align-items: flex-start;
   gap: 10px;
   width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(150, 190, 220, 0.22);
+  border-radius: 12px;
+  background: rgba(10, 12, 16, 0.42);
   color: rgba(225, 235, 248, 0.82);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.45;
 }
 
 .feedback-legal-consent input {
-  width: auto;
-  min-width: 16px;
-  margin-top: 3px;
+  appearance: none;
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin: 1px 0 0;
+  border: 1px solid rgba(159, 216, 232, 0.55);
+  border-radius: 5px;
+  background: rgba(4, 7, 12, 0.92);
+  cursor: pointer;
+}
+
+.feedback-legal-consent input:checked {
+  background: #9fd8e8;
+  border-color: #9fd8e8;
+  box-shadow: 0 0 14px rgba(159, 216, 232, 0.22);
+}
+
+.feedback-legal-consent input:checked::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 9px;
+  margin: 2px 0 0 6px;
+  border: solid #061018;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .feedback-legal-consent a {
   color: #9fd8e8;
+  text-decoration-color: rgba(159, 216, 232, 0.42);
+  text-underline-offset: 3px;
 }
 
 .feedback-input[readonly] {
