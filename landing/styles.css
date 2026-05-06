@@ -778,6 +778,8 @@ body {
 
 .contact-form .consent-check input {
   appearance: none;
+  display: grid;
+  place-items: center;
   width: auto;
   min-width: 18px;
   height: 18px;
@@ -799,7 +801,7 @@ body {
   display: block;
   width: 5px;
   height: 9px;
-  margin: 2px 0 0 6px;
+  margin-top: -1px;
   border: solid #061018;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
