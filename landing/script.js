@@ -99,6 +99,19 @@ toggle.addEventListener("click", () => {
   nav.classList.toggle("nav--open");
 });
 
+// ===== Cookies =====
+const cookieBanner = document.querySelector("[data-cookie-banner]");
+const cookieAccept = document.querySelector("[data-cookie-accept]");
+const cookieConsentKey = "phys_lab_cookie_consent";
+
+if (cookieBanner && cookieAccept && localStorage.getItem(cookieConsentKey) !== "accepted") {
+  cookieBanner.hidden = false;
+  cookieAccept.addEventListener("click", () => {
+    localStorage.setItem(cookieConsentKey, "accepted");
+    cookieBanner.hidden = true;
+  });
+}
+
 // ===== Отправка формы (Formspree) =====
 const contactForm = document.querySelector(".contact-form");
 const formSuccess = document.querySelector(".form-success");

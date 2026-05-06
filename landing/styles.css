@@ -762,6 +762,25 @@ body {
   color: rgba(242, 244, 248, 0.8);
 }
 
+.contact-form .consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.45;
+}
+
+.contact-form .consent-check input {
+  width: auto;
+  min-width: 16px;
+  margin-top: 3px;
+}
+
+.contact-form .consent-check a,
+.footer-links a,
+.legal-document a {
+  color: var(--accent);
+}
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -821,6 +840,39 @@ body {
   color: #ffe1e1;
 }
 
+.cookie-banner {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 40;
+  width: min(420px, calc(100vw - 32px));
+  padding: 16px;
+  border: 1px solid rgba(159, 216, 232, 0.24);
+  border-radius: 16px;
+  background: rgba(7, 10, 18, 0.96);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+  color: var(--text-main);
+}
+
+.cookie-banner[hidden] {
+  display: none;
+}
+
+.cookie-banner p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cookie-banner a {
+  color: var(--accent);
+}
+
+.cookie-banner .btn {
+  width: 100%;
+  justify-content: center;
+}
+
 /* Футер */
 
 .site-footer {
@@ -837,6 +889,57 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 12px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.legal-page {
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text-main);
+}
+
+.legal-document {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+  line-height: 1.65;
+}
+
+.legal-document h1,
+.legal-document h2 {
+  color: #fff;
+}
+
+.legal-document h1 {
+  margin: 0 0 24px;
+  font-size: 34px;
+}
+
+.legal-document h2 {
+  margin: 28px 0 10px;
+  font-size: 20px;
+}
+
+.legal-note {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 190, 90, 0.45);
+  border-radius: 12px;
+  background: rgba(65, 42, 10, 0.45);
+  color: #ffe4b7;
 }
 
 /* Адаптив */
@@ -904,6 +1007,17 @@ body {
 
   .contacts-inner {
     flex-direction: column;
+  }
+
+  .footer-inner,
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-banner {
+    right: 16px;
+    bottom: 16px;
   }
 
   .map-cta {
