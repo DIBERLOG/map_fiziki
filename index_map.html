@@ -307,36 +307,12 @@
             </button>
         </div>
         <div class="feedback-modal-body">
-            <form class="feedback-form" action="https://formspree.io/f/mlgejpwv" method="POST">
-                <input type="hidden" name="topic" id="feedback-topic" value="">
-                <label class="feedback-field">
-                    <span class="feedback-label">Тема карты</span>
-                    <input class="feedback-input" type="text" id="feedback-topic-display" placeholder="Выбранная точка" readonly>
-                </label>
-                <label class="feedback-field">
-                    <span class="feedback-label">Что именно не так</span>
-                    <textarea class="feedback-textarea" name="message" rows="5" placeholder="Опишите ошибку: формулы, текст, изображения, данные..." required></textarea>
-                </label>
-                <label class="feedback-field">
-                    <span class="feedback-label">Контакт для связи (необязательно)</span>
-                    <input class="feedback-input" type="email" name="reply_to" placeholder="Email или другой способ связи">
-                </label>
-                <label class="feedback-legal-consent">
-                    <input type="checkbox" name="legal_terms_acceptance" value="accepted" required>
-                    <span>
-                        Я принимаю
-                        <a href="terms.html" target="_blank" rel="noopener">Пользовательское соглашение</a>,
-                        даю
-                        <a href="consent.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>,
-                        ознакомлен(а) с
-                        <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>
-                        и
-                        <a href="cookies.html" target="_blank" rel="noopener">Политикой cookies</a>.
-                    </span>
-                </label>
-                <button class="feedback-submit" type="submit">Отправить сообщение</button>
-                <div class="feedback-status" role="status" aria-live="polite"></div>
-            </form>
+            <div class="feedback-contact">
+                <p>Опишите ошибку в письме. Кнопка откроет почтовую программу с темой раздела; отправьте письмо самостоятельно.</p>
+                <a class="feedback-submit" id="feedback-email-link" href="mailto:workbook.ea@mail.ru">Написать об ошибке</a>
+                <p>Если почтовая программа не настроена, напишите на <a href="mailto:workbook.ea@mail.ru">workbook.ea@mail.ru</a>.</p>
+                <p>Об обработке обращений — в <a href="privacy.html">Политике конфиденциальности</a>.</p>
+            </div>
         </div>
     </div>
 </div>

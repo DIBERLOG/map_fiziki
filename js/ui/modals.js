@@ -638,23 +638,7 @@
     const feedbackClose = feedbackModal && feedbackModal.querySelector(".close-feedback-modal");
     const filterPanel = helpers.$(CONFIG.selectors.filterPanel);
     const filterToggle = helpers.$(CONFIG.selectors.toggleFilter);
-    const feedbackTopic = document.getElementById("feedback-topic");
-    const feedbackTopicDisplay = document.getElementById("feedback-topic-display");
-    const feedbackForm = feedbackModal && feedbackModal.querySelector(".feedback-form");
-    const feedbackStatus = feedbackModal && feedbackModal.querySelector(".feedback-status");
-    const feedbackSubmit = feedbackModal && feedbackModal.querySelector(".feedback-submit");
-    let feedbackTopicEditable = false;
-    const setFeedbackTopic = () => {
-      const topic = (modalTitle && modalTitle.textContent) ? modalTitle.textContent.trim() : "";
-      if (feedbackTopic) feedbackTopic.value = topic;
-      if (feedbackTopicDisplay) feedbackTopicDisplay.value = topic || "";
-    };
-    const setFeedbackStatus = (text, status) => {
-      if (!feedbackStatus) return;
-      feedbackStatus.textContent = text || "";
-      feedbackStatus.classList.remove("is-success", "is-error");
-      if (status) feedbackStatus.classList.add(status);
-    };
+    const feedbackEmailLink = document.getElementById("feedback-email-link");
     const openFeedbackModal = (options = {}) => {
       if (!feedbackModal) return;
       if (filterPanel && filterPanel.classList.contains("visible")) {
@@ -664,18 +648,11 @@
           if (filterToggle) filterToggle.classList.remove("hidden");
         }, 450);
       }
-      feedbackTopicEditable = options.mode === "free";
-      if (feedbackTopicDisplay) {
-        feedbackTopicDisplay.readOnly = !feedbackTopicEditable;
-        feedbackTopicDisplay.placeholder = feedbackTopicEditable ? "Введите тему карты" : "Выбранная точка";
+      const topic = options.mode === "free" ? "" : (modalTitle?.textContent || "").trim();
+      if (feedbackEmailLink) {
+        const subject = topic ? "Ошибка на карте физики: " + topic : "Ошибка на карте физики";
+        feedbackEmailLink.href = "mailto:workbook.ea@mail.ru?subject=" + encodeURIComponent(subject);
       }
-      if (feedbackTopicEditable) {
-        if (feedbackTopicDisplay) feedbackTopicDisplay.value = "";
-        if (feedbackTopic) feedbackTopic.value = "";
-      } else {
-        setFeedbackTopic();
-      }
-      setFeedbackStatus("", "");
       feedbackModal.classList.add("show");
       feedbackModal.setAttribute("aria-hidden", "false");
       document.body.classList.add("is-feedback-modal-open");
@@ -700,45 +677,6 @@
         if (event.target === feedbackModal) closeFeedbackModal();
       });
     }
-    if (feedbackTopicDisplay && !feedbackTopicDisplay.dataset.syncAttached) {
-      feedbackTopicDisplay.dataset.syncAttached = "1";
-      feedbackTopicDisplay.addEventListener("input", () => {
-        if (!feedbackTopicEditable || !feedbackTopic) return;
-        feedbackTopic.value = feedbackTopicDisplay.value || "";
-      });
-    }
-
-    if (feedbackForm) {
-      feedbackForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const action = feedbackForm.getAttribute("action");
-        if (!action) return;
-        setFeedbackStatus("Отправляем сообщение...", "");
-        if (feedbackSubmit) feedbackSubmit.disabled = true;
-        try {
-          const formData = new FormData(feedbackForm);
-          const response = await fetch(action, {
-            method: "POST",
-            body: formData,
-            headers: {
-              "Accept": "application/json"
-            }
-          });
-          if (response.ok) {
-            setFeedbackStatus("Сообщение отправлено. Спасибо!", "is-success");
-            feedbackForm.reset();
-            setFeedbackTopic();
-          } else {
-            setFeedbackStatus("Произошла ошибка. Сообщение не отправлено.", "is-error");
-          }
-        } catch (error) {
-          setFeedbackStatus("Произошла ошибка. Сообщение не отправлено.", "is-error");
-        } finally {
-          if (feedbackSubmit) feedbackSubmit.disabled = false;
-        }
-      });
-    }
-
     helpers.$$(".close-modal, .close-btn.close-modal, .close-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         if (!modal) return;

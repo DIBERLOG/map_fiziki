@@ -2432,3 +2432,13 @@ body.is-map-transitioning .custom-zoom {
     align-items: center;
   }
 }
+
+
+.map-legal-footer[hidden] {
+  display: none;
+}
+
+a.feedback-submit {
+  display: inline-block;
+  text-decoration: none;
+}

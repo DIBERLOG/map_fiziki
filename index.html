@@ -277,56 +277,12 @@
           </ul>
         </div>
 
-        <form class="contact-form" action="https://formspree.io/f/mlgejpwv" method="POST">
-          <label>
-            Имя
-            <input type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="name" required />
-          </label>
-
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
-          </label>
-
-          <label>
-            Чем вы занимаетесь?
-            <select name="role">
-              <option>Школьник / студент</option>
-              <option>Преподаватель</option>
-              <option>Исследователь</option>
-              <option>Разработчик / продакт</option>
-              <option>Другое</option>
-            </select>
-          </label>
-
-          <label>
-            Сообщение
-            <textarea
-              name="message"
-              rows="4"
-              placeholder="Кратко опишите свой запрос или идею"
-            ></textarea>
-          </label>
-
-          <label class="consent-check">
-            <input type="checkbox" name="legal_terms_acceptance" value="accepted" required />
-            <span>
-              Я принимаю
-              <a href="terms.html" target="_blank" rel="noopener">Пользовательское соглашение</a>,
-              даю
-              <a href="consent.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>,
-              ознакомлен(а) с
-              <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>
-              и
-              <a href="cookies.html" target="_blank" rel="noopener">Политикой cookies</a>.
-            </span>
-          </label>
-
-          <button type="submit" class="btn btn-primary btn-block">
-            Отправить
-          </button>
-        <div class="form-success" aria-live="polite"></div>
-        </form>
+        <div class="contact-form">
+          <p>Кнопка откроет почтовую программу. Напишите и отправьте письмо самостоятельно.</p>
+          <a class="btn btn-primary btn-block" href="mailto:workbook.ea@mail.ru">Написать на почту</a>
+          <p>Если почтовая программа не настроена, скопируйте адрес: <a href="mailto:workbook.ea@mail.ru">workbook.ea@mail.ru</a>.</p>
+          <p>Об обработке обращений — в <a href="privacy.html">Политике конфиденциальности</a>.</p>
+        </div>
       </div>
     </section>
   </main>

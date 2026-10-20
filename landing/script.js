@@ -112,56 +112,6 @@ if (cookieBanner && cookieAccept && localStorage.getItem(cookieConsentKey) !== "
   });
 }
 
-// ===== Отправка формы (Formspree) =====
-const contactForm = document.querySelector(".contact-form");
-const formSuccess = document.querySelector(".form-success");
-
-if (contactForm && formSuccess) {
-  let hideTimer;
-  contactForm.addEventListener("submit", async e => {
-    e.preventDefault();
-    if (hideTimer) {
-      clearTimeout(hideTimer);
-    }
-    formSuccess.classList.remove("is-visible", "is-success", "is-error");
-    formSuccess.textContent = "";
-
-    try {
-      const response = await fetch(contactForm.action, {
-        method: "POST",
-        body: new FormData(contactForm),
-        headers: {
-          Accept: "application/json"
-        }
-      });
-
-      if (response.ok) {
-        contactForm.reset();
-        formSuccess.textContent =
-          "✓ Спасибо! Форма была успешно отправлена.";
-        formSuccess.classList.add("is-success");
-        formSuccess.classList.add("is-visible");
-      } else {
-        formSuccess.textContent = "✗ Не удалось отправить форму. Попробуйте еще раз.";
-        formSuccess.classList.add("is-error");
-        formSuccess.classList.add("is-visible");
-      }
-    } catch {
-      formSuccess.textContent = "✗ Сеть недоступна. Попробуйте еще раз.";
-      formSuccess.classList.add("is-error");
-      formSuccess.classList.add("is-visible");
-    }
-
-    hideTimer = setTimeout(() => {
-      formSuccess.classList.add("is-hiding");
-      setTimeout(() => {
-        formSuccess.classList.remove("is-visible", "is-success", "is-error", "is-hiding");
-        formSuccess.textContent = "";
-      }, 400);
-    }, 30000);
-  });
-}
-
 // ===== Модальные заметки =====
 const modal = document.getElementById("note-modal");
 const modalTitle = document.getElementById("note-modal-title");

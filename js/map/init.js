@@ -24,6 +24,14 @@
 
     STATE.map = m;
     window.map = m;
+    const legalFooter = document.querySelector(".map-legal-footer");
+    if (legalFooter) {
+      const updateLegalFooter = () => {
+        legalFooter.hidden = m.getZoom() > m.getMinZoom();
+      };
+      m.on("zoomend zoomlevelschange", updateLegalFooter);
+      updateLegalFooter();
+    }
     return m;
   }
 
