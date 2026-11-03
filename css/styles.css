@@ -2442,3 +2442,21 @@ a.feedback-submit {
   display: inline-block;
   text-decoration: none;
 }
+
+/* "Сообщить об ошибке": the form inside the modal */
+#feedback-form label { display: block; margin: 0 0 10px; font-size: 13px; text-align: left; }
+#feedback-form input:not([type=checkbox]), #feedback-form textarea { display: block; width: 100%; margin-top: 4px; padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(125, 249, 255, 0.25); background: rgba(4, 7, 12, 0.6); color: inherit; font: inherit; font-size: 16px; box-sizing: border-box; }
+#feedback-form .consent-check { display: flex; gap: 10px; align-items: flex-start; font-size: 12px; line-height: 1.45; }
+#feedback-form .consent-check input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: #9fd8e8; }
+#feedback-form .consent-check a, #feedback-form p a { color: #9fd8e8; }
+#feedback-form .feedback-submit { border: 0; cursor: pointer; font: inherit; }
+#feedback-form .feedback-submit:disabled { opacity: .6; }
+.feedback-status { min-height: 1.4em; margin: 10px 0 0; font-size: 14px; }
+.feedback-status[data-kind="ok"] { color: #7ee2b8; }
+.feedback-status[data-kind="error"] { color: #ff9a9a; }
+.feedback-trap { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+/* While the form is open, the fixed legal footer and the map controls step aside, so nothing covers it on phones */
+body.is-feedback-modal-open .map-legal-footer,
+body.is-feedback-modal-open .leaflet-control-container,
+body.is-feedback-modal-open #toggle-filter,
+body.is-feedback-modal-open #custom-zoom { visibility: hidden; }
