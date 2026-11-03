@@ -653,6 +653,9 @@
         const subject = topic ? "Ошибка на карте физики: " + topic : "Ошибка на карте физики";
         feedbackEmailLink.href = "mailto:workbook.ea@mail.ru?subject=" + encodeURIComponent(subject);
       }
+      // The form sends the topic of the open card along with the message.
+      const feedbackTopic = document.getElementById("feedback-topic");
+      if (feedbackTopic) feedbackTopic.value = topic ? "Ошибка на карте: " + topic : "Ошибка на карте";
       feedbackModal.classList.add("show");
       feedbackModal.setAttribute("aria-hidden", "false");
       document.body.classList.add("is-feedback-modal-open");
