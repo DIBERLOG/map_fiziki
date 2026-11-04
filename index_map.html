@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
 
     <!-- Стили -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=20261104">
 </head>
 
 <body>
@@ -313,7 +313,7 @@
                 <label>Ваше имя<input name="name" autocomplete="name" maxlength="100" required></label>
                 <label>Почта для ответа<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
                 <label>Что не так<textarea name="message" rows="4" minlength="10" maxlength="5000" required></textarea></label>
-                <label class="feedback-trap" aria-hidden="true">Сайт<input name="website" tabindex="-1" autocomplete="off"></label>
+                <label class="feedback-trap" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">Сайт<input name="website" tabindex="-1" autocomplete="off"></label>
                 <label class="consent-check">
                   <input type="checkbox" name="terms" required>
                   <span>Я принимаю <a href="terms.html" target="_blank" rel="noopener">Пользовательское соглашение</a>, ознакомлен(а) с <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a> и <a href="cookies.html" target="_blank" rel="noopener">Политикой cookies</a></span>
@@ -395,10 +395,10 @@
 <script src="js/map/layers.js"></script>
 <script src="js/graph/layout.js"></script>
 <script src="js/ui/filter.js"></script>
-<script src="js/ui/modals.js"></script>
+<script src="js/ui/modals.js?v=20261104"></script>
 <script src="js/ui/search.js"></script>
 <script src="js/main.js"></script>
-<script src="landing/feedback.js"></script>
+<script src="landing/feedback.js?v=20261104"></script>
 
 <footer class="map-legal-footer">
   <p>c 2025 Карта физики</p>
